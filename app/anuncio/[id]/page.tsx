@@ -9,6 +9,7 @@ import { LookSheet } from "@/components/LookSheet";
 import { TierBadge } from "@/components/TierBadge";
 import { fetchListing, fetchRelatedListings } from "@/lib/api";
 import { artworkForPokemon } from "@/lib/art";
+import { ballLabel, ballSprite, isBallId } from "@/lib/balls";
 import { elementColor, elementLabels, pokemonTitle } from "@/lib/catalog";
 import { formatPrice, listingSellerLabel } from "@/lib/listings";
 
@@ -60,7 +61,7 @@ export default async function ListingPage({
 
           <div className="mt-6 grid gap-6 sm:grid-cols-[minmax(0,260px)_1fr] sm:items-start">
             <div
-              className="art-well aspect-square p-6"
+              className="art-well relative aspect-square p-6"
               style={{
                 ["--type-tint" as string]: listing.elements[0]
                   ? elementColor(listing.elements[0])
@@ -73,6 +74,15 @@ export default async function ListingPage({
                 className="h-full w-full object-contain"
                 style={{ imageRendering: "pixelated" }}
               />
+              {listing.attrs.ball && isBallId(listing.attrs.ball) ? (
+                <img
+                  src={ballSprite(listing.attrs.ball)}
+                  alt={ballLabel(listing.attrs.ball)}
+                  title={ballLabel(listing.attrs.ball)}
+                  className="pointer-events-none absolute right-3 top-3 h-9 w-9 drop-shadow-sm"
+                  style={{ imageRendering: "pixelated" }}
+                />
+              ) : null}
             </div>
 
             <div>

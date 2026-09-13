@@ -58,6 +58,7 @@
     "showSellerNick": true,
     "note": "Prefiro Pix. Entrego no DP.",
     "attrs": {
+      "ball": "premier",
       "aura": 3800,
       "boost": 25,
       "nickname": "Harai Goshi",
@@ -83,6 +84,7 @@
     "showSellerNick": false,
     "note": "",
     "attrs": {
+      "ball": null,
       "aura": null,
       "boost": null,
       "nickname": null,
@@ -130,6 +132,7 @@
     "note": "Prefiro Pix. Entrego no DP.",
 
     "attrs": {
+      "ball": "premier",
       "aura": 3800,
       "boost": 25,
       "nickname": "Harai Goshi",
@@ -154,6 +157,7 @@
     "priceBrl": "integer >= 0",
     "showSellerNick": "boolean — por anúncio; false = card/detalhe como Anônimo",
     "note": "string, max ~2000 chars, pode ser vazia",
+    "attrs.ball": "string | null — id da pokébola (poke, premier, master…); ver lib/balls",
     "attrs.aura": "integer >= 0 | null",
     "attrs.boost": "integer >= 0 | null (UI mostra +N)",
     "attrs.nickname": "string | null",

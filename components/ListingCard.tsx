@@ -2,6 +2,7 @@ import Link from "next/link";
 import { IconShiny, IconTrade, IconType } from "@/components/Icons";
 import { TierBadge } from "@/components/TierBadge";
 import { artworkForPokemon } from "@/lib/art";
+import { ballLabel, ballSprite, isBallId } from "@/lib/balls";
 import {
   cardRarity,
   elementColor,
@@ -43,13 +44,13 @@ export function ListingCard({ listing }: { listing: Listing }) {
         data-rarity={rarity}
         className="collect-card group h-full min-w-0"
       >
-        {/* Header: status + badge — empilha se apertar */}
-        <div className="flex flex-wrap items-center justify-between gap-x-1.5 gap-y-1 border-b-2 border-navy/20 px-2 py-1.5 sm:px-2.5 sm:py-2">
-          <span className="inline-flex items-center gap-1 text-[9px] font-extrabold uppercase tracking-[0.08em] text-olive sm:text-[10px] sm:tracking-[0.1em]">
+        {/* Header: altura fixa — badge longo não pode wrapar e esticar o card */}
+        <div className="flex h-8 shrink-0 items-center justify-between gap-1.5 border-b-2 border-navy/20 px-2 sm:h-9 sm:px-2.5">
+          <span className="inline-flex min-w-0 items-center gap-1 text-[9px] font-extrabold uppercase tracking-[0.08em] text-olive sm:text-[10px] sm:tracking-[0.1em]">
             <IconTrade className="shrink-0 text-[13px] sm:text-[14px]" />
-            <span className="max-[340px]:sr-only">À venda</span>
+            <span className="truncate max-[340px]:sr-only">À venda</span>
           </span>
-          <div className="flex min-w-0 max-w-full items-center justify-end gap-1">
+          <div className="flex shrink-0 items-center gap-1">
             {listing.shiny ? (
               <IconShiny
                 className="shrink-0 text-[11px] text-price/80"
@@ -70,6 +71,15 @@ export function ListingCard({ listing }: { listing: Listing }) {
             className="h-full w-full object-contain p-1.5 sm:p-2 transition-transform duration-300 group-hover:scale-[1.06]"
             style={{ imageRendering: "pixelated" }}
           />
+          {listing.attrs.ball && isBallId(listing.attrs.ball) ? (
+            <img
+              src={ballSprite(listing.attrs.ball)}
+              alt={ballLabel(listing.attrs.ball)}
+              title={ballLabel(listing.attrs.ball)}
+              className="pointer-events-none absolute right-1 top-1 h-6 w-6 drop-shadow-sm sm:right-1.5 sm:top-1.5 sm:h-7 sm:w-7"
+              style={{ imageRendering: "pixelated" }}
+            />
+          ) : null}
         </div>
 
         <div className="flex min-w-0 flex-1 flex-col gap-1 px-2 pb-2 pt-1.5 sm:gap-1.5 sm:px-2.5 sm:pb-2.5 sm:pt-2">

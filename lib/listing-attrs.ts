@@ -1,3 +1,5 @@
+import { ballLabel } from "@/lib/balls";
+
 /**
  * Atributos do anúncio — espelham a ficha do cliente PokeAlliance.
  *
@@ -8,6 +10,8 @@
  * - Required Level vem do catálogo da espécie (não é “level do Pokémon”).
  * - NPC Price e Comida & Buffs não entram (irrelevante / temporário).
  * - Helds: lista oficial X-/Y- (tiers) do PokeAlliance.
+ * - ball: pokébola de captura (no jogo aparece como “Aura: premier” etc.).
+ * - aura: valor numérico separado da pokébola.
  */
 
 export type TrainStatKey =
@@ -25,6 +29,8 @@ export type TrainStat = {
 export type Training = Record<TrainStatKey, TrainStat>;
 
 export type ListingAttrs = {
+  /** ID da pokébola (`premier`, `master`…). Ver `lib/balls`. */
+  ball: string | null;
   aura: number | null;
   /** Valor do boost no jogo, ex: 25 → “+25”. */
   boost: number | null;
@@ -57,6 +63,7 @@ export const emptyTraining: Training = {
 };
 
 export const emptyAttrs: ListingAttrs = {
+  ball: null,
   aura: null,
   boost: null,
   nickname: null,
@@ -200,6 +207,9 @@ export function formatAttrs(
   if (options?.requiredLevel != null) {
     rows.push({ key: "Required Level", value: String(options.requiredLevel) });
   }
+  if (attrs.ball) {
+    rows.push({ key: "Pokébola", value: ballLabel(attrs.ball) });
+  }
   if (attrs.aura != null) {
     rows.push({ key: "Aura", value: String(attrs.aura) });
   }
@@ -246,11 +256,12 @@ export function formatAttrs(
 /** Meta curta pro feed: o que muda preço no scan. */
 export function feedAttrsMeta(attrs: ListingAttrs) {
   const bits: string[] = [];
+  if (attrs.ball) bits.push(ballLabel(attrs.ball));
   if (attrs.boost != null) {
     bits.push(attrs.boost >= 0 ? `Boost +${attrs.boost}` : `Boost ${attrs.boost}`);
   }
   if (attrs.starLevel != null) bits.push(`★${attrs.starLevel}`);
-  if (attrs.helds.length > 0) {
+  if (bits.length < 2 && attrs.helds.length > 0) {
     bits.push(attrs.helds.map(heldLabel).slice(0, 2).join(" + "));
   }
   if (bits.length < 2 && attrs.aura != null) bits.push(`Aura ${attrs.aura}`);

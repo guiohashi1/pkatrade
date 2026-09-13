@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ElementDots } from "@/components/ElementDots";
+import { BallPicker } from "@/components/BallPicker";
 import { HeldPicker } from "@/components/HeldPicker";
 import { IconShiny } from "@/components/Icons";
 import { LookSheet } from "@/components/LookSheet";
@@ -12,6 +13,7 @@ import { TierBadge } from "@/components/TierBadge";
 import { useToast } from "@/components/ToastProvider";
 import { createListing, isApiConfigured } from "@/lib/api";
 import { artworkForPokemon } from "@/lib/art";
+import { ballLabel, ballSprite, isBallId } from "@/lib/balls";
 import { defaultShowNickPreference } from "@/lib/auth";
 import { readLocalUser } from "@/lib/auth-session";
 import {
@@ -378,6 +380,11 @@ export function CreateAdForm() {
             </p>
           </fieldset>
 
+          <BallPicker
+            value={attrs.ball}
+            onChange={(ball) => setAttr("ball", ball)}
+          />
+
           <div className="grid grid-cols-2 gap-4">
             <label className="block">
               <span className="rpg-label">Aura</span>
@@ -555,6 +562,15 @@ export function CreateAdForm() {
                     À venda
                   </span>
                 </div>
+                {attrs.ball && isBallId(attrs.ball) ? (
+                  <img
+                    src={ballSprite(attrs.ball)}
+                    alt={ballLabel(attrs.ball)}
+                    title={ballLabel(attrs.ball)}
+                    className="pointer-events-none absolute right-2 top-2 h-7 w-7 drop-shadow-sm"
+                    style={{ imageRendering: "pixelated" }}
+                  />
+                ) : null}
               </div>
 
               <div className="p-3">

@@ -41,6 +41,7 @@ function train(
 
 function attrsFrom(seed: MockSeed["attrs"]): ListingAttrs {
   return {
+    ball: seed.ball ?? null,
     aura: seed.aura ?? null,
     boost: seed.boost ?? null,
     nickname: seed.nickname ?? null,
@@ -62,6 +63,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-12T18:40:00.000Z",
     note: "Prefiro Pix. Entrego no DP de Sun.",
     attrs: {
+      ball: "premier",
       aura: 3800,
       boost: 25,
       nickname: "Harai Goshi",
@@ -87,6 +89,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-13T10:15:00.000Z",
     note: "Aceito diamonds. Online à noite.",
     attrs: {
+      ball: "ultra",
       aura: 2100,
       boost: 10,
       starLevel: 2,
@@ -108,6 +111,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-11T21:05:00.000Z",
     note: "Só Pix. Entrega no CP.",
     attrs: {
+      ball: "dusk",
       aura: 3200,
       boost: 20,
       nickname: "Haunt",
@@ -130,6 +134,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-13T08:30:00.000Z",
     note: "Sprite shiny ok. Sem addon.",
     attrs: {
+      ball: "net",
       aura: 2750,
       boost: 15,
       starLevel: 1,
@@ -150,6 +155,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-10T14:00:00.000Z",
     note: "Farm pronto. Aceito oferta séria.",
     attrs: {
+      ball: "luxury",
       aura: 4100,
       boost: 30,
       nickname: "Tempest",
@@ -173,6 +179,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-09T19:45:00.000Z",
     note: "ULTIMATE. Negocio só com garantia.",
     attrs: {
+      ball: "master",
       aura: 5200,
       boost: 40,
       starLevel: 5,
@@ -194,6 +201,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-12T11:20:00.000Z",
     note: "Bom pra hunt. Entrego rápido.",
     attrs: {
+      ball: "repeat",
       aura: 2900,
       boost: 18,
       starLevel: 2,
@@ -214,6 +222,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-08T16:10:00.000Z",
     note: "Shiny limpo. Preferência Titan.",
     attrs: {
+      ball: "heavy",
       aura: 3600,
       boost: 22,
       nickname: "Mountain",
@@ -236,6 +245,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-13T12:00:00.000Z",
     note: "Sem pressa. Pix ou diamonds.",
     attrs: {
+      ball: "love",
       aura: 3050,
       boost: 12,
       starLevel: 2,
@@ -256,6 +266,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-13T13:40:00.000Z",
     note: "Barato pra começar. Entrego no depot.",
     attrs: {
+      ball: "poke",
       aura: 400,
       boost: 0,
       starLevel: 0,
@@ -273,6 +284,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-11T09:55:00.000Z",
     note: "Boa base. Treino parcial.",
     attrs: {
+      ball: "dive",
       aura: 2400,
       boost: 8,
       starLevel: 1,
@@ -294,6 +306,7 @@ const SEEDS: MockSeed[] = [
     postedAt: "2026-09-07T22:30:00.000Z",
     note: "Shiny ULTIMATE. Só proposta alta.",
     attrs: {
+      ball: "cherish",
       aura: 6000,
       boost: 50,
       nickname: "Ozone",
