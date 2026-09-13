@@ -1,0 +1,160 @@
+{
+  "_meta": {
+    "product": "pkatrade",
+    "version": "1.0.0",
+    "notes": [
+      "Required Level, generation, tier, elements, image e displayName vêm do catálogo (wiki) a partir de dex+shiny — o client não deve inventar esses campos no create.",
+      "NPC Price e Comida/Buffs não entram no anúncio.",
+      "helds: máximo 2 ids. Formato: {family}-t{tier}, ex: x-attack-t5, y-ghost-t3.",
+      "priceBrl é inteiro em reais (sem centavos no MVP).",
+      "status: active | sold | archived (sugestão pro backend)."
+    ]
+  },
+
+  "enums": {
+    "side": ["venda", "procuro"],
+    "world": ["Sun", "Moon", "Titan", "Titan 2", "Titan 3"],
+    "status": ["active", "sold", "archived"],
+    "starLevel": [0, 1, 2, 3, 4, 5],
+    "heldFamily": [
+      "x-attack",
+      "x-lucky",
+      "x-defense",
+      "x-critical",
+      "x-experience",
+      "x-boost",
+      "x-haste",
+      "x-agility",
+      "x-harden",
+      "x-strafe",
+      "x-rage",
+      "y-teleport",
+      "y-cure",
+      "y-wing",
+      "y-ghost"
+    ],
+    "heldNotes": {
+      "tiers": "1..7 para todas as famílias, exceto y-ghost (somente tier 3)",
+      "idFormat": "{family}-t{tier}",
+      "examples": ["x-attack-t1", "x-boost-t7", "y-cure-t3", "y-ghost-t3"]
+    },
+    "trainingKeys": [
+      "attack",
+      "defense",
+      "critDamage",
+      "critChance",
+      "critResist"
+    ]
+  },
+
+  "createListingRequest": {
+    "dex": 373,
+    "shiny": true,
+    "side": "venda",
+    "world": "Sun",
+    "priceBrl": 1100,
+    "note": "Prefiro Pix. Entrego no DP.",
+    "attrs": {
+      "aura": 3800,
+      "boost": 25,
+      "nickname": "Harai Goshi",
+      "starLevel": 3,
+      "helds": ["x-attack-t5", "y-teleport-t2"],
+      "addon": "salamence coven costume",
+      "training": {
+        "attack": { "value": 46, "pct": 44 },
+        "defense": { "value": 40, "pct": 17 },
+        "critDamage": { "value": 14, "pct": 3 },
+        "critChance": { "value": 15, "pct": 64 },
+        "critResist": { "value": 22, "pct": 48 }
+      }
+    }
+  },
+
+  "createListingRequestMinimal": {
+    "dex": 25,
+    "shiny": false,
+    "side": "procuro",
+    "world": "Moon",
+    "priceBrl": 50,
+    "note": "",
+    "attrs": {
+      "aura": null,
+      "boost": null,
+      "nickname": null,
+      "starLevel": null,
+      "helds": [],
+      "addon": null,
+      "training": {
+        "attack": { "value": null, "pct": null },
+        "defense": { "value": null, "pct": null },
+        "critDamage": { "value": null, "pct": null },
+        "critChance": { "value": null, "pct": null },
+        "critResist": { "value": null, "pct": null }
+      }
+    }
+  },
+
+  "listingResponse": {
+    "id": "clx01abc2def3",
+    "status": "active",
+    "createdAt": "2026-09-13T14:22:00.000Z",
+    "updatedAt": "2026-09-13T14:22:00.000Z",
+
+    "seller": {
+      "id": "usr_9k2m",
+      "name": "marcos_ht",
+      "image": null
+    },
+
+    "dex": 373,
+    "shiny": true,
+    "catalogId": "373.1",
+    "number": "373",
+    "name": "Salamence",
+    "displayName": "Shiny Salamence",
+    "image": "/pokemon/373.1.png",
+    "generation": 3,
+    "tier": "Ultimate",
+    "requiredLevel": 120,
+    "elements": ["dragon", "flying"],
+
+    "side": "venda",
+    "world": "Sun",
+    "priceBrl": 1100,
+    "note": "Prefiro Pix. Entrego no DP.",
+
+    "attrs": {
+      "aura": 3800,
+      "boost": 25,
+      "nickname": "Harai Goshi",
+      "starLevel": 3,
+      "helds": ["x-attack-t5", "y-teleport-t2"],
+      "addon": "salamence coven costume",
+      "training": {
+        "attack": { "value": 46, "pct": 44 },
+        "defense": { "value": 40, "pct": 17 },
+        "critDamage": { "value": 14, "pct": 3 },
+        "critChance": { "value": 15, "pct": 64 },
+        "critResist": { "value": 22, "pct": 48 }
+      }
+    }
+  },
+
+  "fieldRules": {
+    "dex": "number, obrigatório, existe no catálogo wiki",
+    "shiny": "boolean, obrigatório",
+    "side": "venda | procuro",
+    "world": "Sun | Moon | Titan | Titan 2 | Titan 3",
+    "priceBrl": "integer >= 0",
+    "note": "string, max ~2000 chars, pode ser vazia",
+    "attrs.aura": "integer >= 0 | null",
+    "attrs.boost": "integer >= 0 | null (UI mostra +N)",
+    "attrs.nickname": "string | null",
+    "attrs.starLevel": "0..5 | null",
+    "attrs.helds": "string[] length 0..2, ids válidos",
+    "attrs.addon": "string | null (nome livre do costume)",
+    "attrs.training.*.value": "integer >= 0 | null",
+    "attrs.training.*.pct": "integer 0..100 | null"
+  }
+}
