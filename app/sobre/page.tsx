@@ -17,24 +17,26 @@ const steps = [
 
 export default function SobrePage() {
   return (
-    <div className="max-w-3xl">
-      <p className="text-[11px] uppercase tracking-[0.16em] text-brass">Sobre</p>
-      <h1 className="mt-2 font-serif text-[2.1rem] leading-tight tracking-tight">
-        Bazar gratuito do PokeAlliance
+    <div className="mx-auto max-w-3xl px-3 py-5 sm:px-6 sm:py-7">
+      <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-navy-mid">
+        Sobre
+      </p>
+      <h1 className="mt-2 font-[family-name:var(--font-pixel)] text-[1.75rem] leading-tight tracking-wide text-navy sm:text-[2.1rem]">
+        Bazar do PokeAlliance
       </h1>
 
       <p className="mt-5 text-[15px] leading-[1.75] text-ink-soft">
-        Funciona no mesmo espírito de um market de Tibia: anuncia, busca, fecha
-        no chat. A troca em si é no jogo.
+        Funciona no espírito de um market clássico: você anuncia o Pokémon à
+        venda, quem se interessar manda mensagem e a troca fecha no jogo.
       </p>
 
-      <ol className="mt-10 grid gap-6 sm:grid-cols-3">
+      <ol className="mt-10 grid gap-4 sm:grid-cols-3">
         {steps.map((step, index) => (
-          <li key={step.title} className="border-t border-line pt-4">
-            <p className="tabular font-serif text-[1.6rem] leading-none text-muted/60">
+          <li key={step.title} className="rpg-inset p-4">
+            <p className="tabular font-[family-name:var(--font-pixel)] text-[1.35rem] leading-none text-navy-mid/50">
               {String(index + 1).padStart(2, "0")}
             </p>
-            <h2 className="mt-2 font-serif text-[1.2rem] leading-tight">
+            <h2 className="mt-2 font-[family-name:var(--font-pixel)] text-[1.05rem] leading-tight text-navy">
               {step.title}
             </h2>
             <p className="mt-1.5 text-[13px] leading-relaxed text-muted">
@@ -44,10 +46,11 @@ export default function SobrePage() {
         ))}
       </ol>
 
-      <div className="mt-12 space-y-5 border-t border-line pt-8 text-[15px] leading-[1.75] text-ink-soft">
+      <div className="mt-12 space-y-5 border-t-2 border-line pt-8 text-[15px] leading-[1.75] text-ink-soft">
         <p>
-          Depois o login (Google ou código no email) cria a conta pra publicar e
-          conversar. Neste esboço isso ainda não está ligado.
+          O login (Google ou código no email) cria a conta pra publicar e
+          conversar. Depois você liga o nick e o mundo do personagem. Em cada
+          anúncio você escolhe mostrar o nick ou publicar como anônimo.
         </p>
         <p>
           Não tem escrow e o site não entrega Pokémon. RMT é permitido no
@@ -57,7 +60,7 @@ export default function SobrePage() {
           A lista de Pokémon vem da{" "}
           <a
             href="https://wiki.pokealliance.com/pokemon"
-            className="underline decoration-line underline-offset-2 hover:decoration-ink"
+            className="font-bold text-navy underline decoration-line underline-offset-2 hover:decoration-navy"
             target="_blank"
             rel="noreferrer"
           >
@@ -70,7 +73,7 @@ export default function SobrePage() {
       <div className="mt-10 flex flex-wrap gap-3 text-[13px]">
         <Link
           href="/"
-          className="border border-line bg-card px-4 py-2 transition-colors hover:border-ink/40"
+          className="border-2 border-navy/30 bg-card px-4 py-2 font-bold transition-colors hover:border-navy"
         >
           Ver anúncios
         </Link>

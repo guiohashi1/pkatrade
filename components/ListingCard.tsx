@@ -1,106 +1,123 @@
 import Link from "next/link";
+import { IconShiny, IconTrade, IconType } from "@/components/Icons";
 import { TierBadge } from "@/components/TierBadge";
-import { artworkUrl } from "@/lib/art";
+import { artworkForPokemon } from "@/lib/art";
 import {
+  cardRarity,
   elementColor,
   elementLabels,
-  isRareTier,
+  pokemonTitle,
 } from "@/lib/catalog";
 import { feedAttrsMeta } from "@/lib/listing-attrs";
-import { formatPrice, sideLabel, type Listing } from "@/lib/listings";
+import { formatPrice, listingSellerLabel, type Listing } from "@/lib/listings";
 
-function typeLine(elements: string[]) {
-  return elements.map((el) => elementLabels[el] ?? el).join(" / ");
+function typePips(elements: string[]) {
+  return elements.slice(0, 2).map((el) => (
+    <span key={el} className="type-pip" title={elementLabels[el] ?? el}>
+      <IconType element={el} className="text-[16px] sm:text-[18px]" />
+    </span>
+  ));
+}
+
+/** Barra decorativa de “vitalidade” visual (não é HP real do jogo). */
+function vitalityPct(listing: Listing) {
+  const base = Math.min(92, 28 + listing.requiredLevel * 0.9);
+  const bump = listing.shiny ? 8 : 0;
+  const rare = cardRarity(listing) === "premium" ? 6 : 0;
+  return Math.round(Math.min(98, base + bump + rare));
 }
 
 export function ListingCard({ listing }: { listing: Listing }) {
   const meta = feedAttrsMeta(listing.attrs);
   const primary = listing.elements[0];
-  const tint = primary ? elementColor(primary) : "#6d7c5c";
-  const rare = isRareTier(listing.tier);
-  const types = typeLine(listing.elements);
-  const priceText =
-    listing.side === "procuro"
-      ? `até ${formatPrice(listing.priceBrl)}`
-      : formatPrice(listing.priceBrl);
+  const tint = primary ? elementColor(primary) : "#6a849e";
+  const rarity = cardRarity(listing);
+  const priceText = formatPrice(listing.priceBrl);
+  const pct = vitalityPct(listing);
+  const title = pokemonTitle(listing);
 
   return (
-    <li className="border-b border-line-soft last:border-0">
+    <li className="enter-fade min-w-0">
       <Link
         href={`/anuncio/${listing.id}`}
-        className={
-          listing.shiny
-            ? "feed-row feed-row-shiny group grid grid-cols-[3px_64px_minmax(0,1fr)] items-center gap-2.5 py-3 sm:grid-cols-[4px_88px_minmax(0,1fr)] sm:gap-3.5 sm:py-3.5"
-            : "feed-row group grid grid-cols-[3px_64px_minmax(0,1fr)] items-center gap-2.5 py-3 sm:grid-cols-[4px_88px_minmax(0,1fr)] sm:gap-3.5 sm:py-3.5"
-        }
+        data-rarity={rarity}
+        className="collect-card group h-full min-w-0"
       >
-        <span
-          aria-hidden
-          className="self-stretch"
-          style={{ backgroundColor: tint }}
-        />
+        {/* Header: status + badge — empilha se apertar */}
+        <div className="flex flex-wrap items-center justify-between gap-x-1.5 gap-y-1 border-b-2 border-navy/20 px-2 py-1.5 sm:px-2.5 sm:py-2">
+          <span className="inline-flex items-center gap-1 text-[9px] font-extrabold uppercase tracking-[0.08em] text-olive sm:text-[10px] sm:tracking-[0.1em]">
+            <IconTrade className="shrink-0 text-[13px] sm:text-[14px]" />
+            <span className="max-[340px]:sr-only">À venda</span>
+          </span>
+          <div className="flex min-w-0 max-w-full items-center justify-end gap-1">
+            {listing.shiny ? (
+              <IconShiny
+                className="shrink-0 text-[11px] text-price/80"
+                title="Shiny"
+              />
+            ) : null}
+            <TierBadge tier={listing.tier} compact />
+          </div>
+        </div>
 
         <div
-          className={
-            listing.shiny
-              ? "art-well relative aspect-square overflow-hidden ring-1 ring-gold/35"
-              : "art-well relative aspect-square overflow-hidden"
-          }
+          className="art-well relative mx-1.5 mt-1.5 aspect-square overflow-hidden border-2 border-navy/25 sm:mx-2 sm:mt-2"
           style={{ ["--type-tint" as string]: tint }}
         >
           <img
-            src={artworkUrl(listing.image)}
+            src={artworkForPokemon(listing)}
             alt=""
-            className="h-full w-full object-contain p-1 transition-transform duration-300 group-hover:scale-[1.05]"
+            className="h-full w-full object-contain p-1.5 sm:p-2 transition-transform duration-300 group-hover:scale-[1.06]"
+            style={{ imageRendering: "pixelated" }}
           />
         </div>
 
-        <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <span
-              className={
-                listing.side === "venda"
-                  ? "text-[11px] uppercase tracking-[0.08em] text-olive"
-                  : "text-[11px] uppercase tracking-[0.08em] text-warn"
-              }
-            >
-              {sideLabel(listing.side)}
-            </span>
-            <span className="text-[11px] text-muted">{listing.world}</span>
-            <TierBadge tier={listing.tier} />
-            {listing.shiny ? (
-              <span className="border border-gold/40 bg-gold-soft/70 px-1 py-px text-[10px] uppercase tracking-[0.1em] text-gold">
-                shiny
-              </span>
-            ) : null}
+        <div className="flex min-w-0 flex-1 flex-col gap-1 px-2 pb-2 pt-1.5 sm:gap-1.5 sm:px-2.5 sm:pb-2.5 sm:pt-2">
+          {/* Nome + tipos: tipos sobem pra linha de baixo no estreito */}
+          <div className="min-w-0 space-y-1">
+            <div className="flex items-start justify-between gap-1.5">
+              <h2
+                className="min-w-0 flex-1 font-[family-name:var(--font-pixel)] text-[0.82rem] leading-snug text-navy sm:text-[0.95rem] sm:leading-tight"
+                title={title}
+              >
+                <span className="line-clamp-2 break-words hyphens-auto">
+                  {title}
+                </span>
+              </h2>
+              <div className="hidden shrink-0 gap-0.5 sm:flex">
+                {typePips(listing.elements)}
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-1 sm:hidden">
+              {typePips(listing.elements)}
+            </div>
           </div>
 
-          <div className="mt-0.5 flex items-baseline justify-between gap-3">
-            <h2 className="min-w-0 truncate font-serif text-[1.2rem] leading-tight tracking-tight text-ink group-hover:underline sm:text-[1.35rem]">
-              {listing.displayName}
-            </h2>
-            <p
-              className={
-                rare || listing.shiny
-                  ? "tabular shrink-0 font-serif text-[1.15rem] leading-none text-price sm:text-[1.35rem]"
-                  : "tabular shrink-0 font-serif text-[1.1rem] leading-none text-price sm:text-[1.3rem]"
-              }
-            >
-              {priceText}
-            </p>
-          </div>
-
-          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[12px] text-muted">
-            {types ? <span>{types}</span> : null}
-            {types && meta ? <span className="text-line">·</span> : null}
-            {meta ? <span className="truncate text-ink-soft">{meta}</span> : null}
-          </div>
-
-          <p className="mt-1 truncate text-[11px] text-muted/80 sm:text-[12px]">
-            {listing.seller}
-            <span className="mx-1.5 text-line">·</span>
-            {listing.postedAt}
+          <p className="truncate text-[10px] font-bold text-muted sm:text-[11px]">
+            Lv. {listing.requiredLevel}
+            <span className="mx-1 text-line">·</span>
+            {listing.world}
           </p>
+
+          {meta ? (
+            <p className="truncate text-[10px] text-ink-soft sm:text-[11px]">
+              {meta}
+            </p>
+          ) : null}
+
+          <div className="mt-auto space-y-1 pt-1 sm:space-y-1.5">
+            <div className="hp-bar" title="Destaque visual">
+              <span style={{ width: `${pct}%` }} />
+            </div>
+            <div className="flex min-w-0 items-end justify-between gap-1.5">
+              <p className="min-w-0 truncate text-[9px] text-muted sm:text-[10px]">
+                {listingSellerLabel(listing)}
+              </p>
+              <p className="tabular shrink-0 font-[family-name:var(--font-pixel)] text-[0.8rem] leading-none text-price sm:text-[0.95rem]">
+                {priceText}
+              </p>
+            </div>
+          </div>
         </div>
       </Link>
     </li>

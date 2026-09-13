@@ -10,6 +10,21 @@ const nextConfig: NextConfig = {
         hostname: "wiki.pokealliance.com",
         pathname: "/pokemon/**",
       },
+      {
+        protocol: "https",
+        hostname: "img.pokemondb.net",
+        pathname: "/sprites/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+        pathname: "/gh/PokeAPI/sprites@master/**",
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        pathname: "/PokeAPI/sprites/**",
+      },
     ],
   },
 };

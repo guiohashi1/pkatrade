@@ -18,8 +18,8 @@ export function NavLink({
       href={href}
       className={
         active
-          ? "border-b border-brass pb-0.5 text-ink"
-          : "border-b border-transparent pb-0.5 text-muted hover:text-ink"
+          ? "border-b-2 border-gold pb-0.5 text-gold"
+          : "border-b-2 border-transparent pb-0.5 text-sky-soft/90 hover:text-cream"
       }
     >
       {children}

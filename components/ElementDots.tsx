@@ -1,4 +1,5 @@
-import { elementColor, elementLabels } from "@/lib/catalog";
+import { IconType } from "@/components/Icons";
+import { elementLabels } from "@/lib/catalog";
 
 export function ElementDots({
   elements,
@@ -14,13 +15,17 @@ export function ElementDots({
       {elements.map((element) => {
         const label = elementLabels[element] ?? element;
         return (
-          <span key={element} className="inline-flex items-center gap-1" title={label}>
-            <span
-              aria-hidden
-              className="h-[7px] w-[7px] rounded-full"
-              style={{ backgroundColor: elementColor(element) }}
-            />
-            {withLabels ? <span>{label}</span> : <span className="sr-only">{label}</span>}
+          <span
+            key={element}
+            className="inline-flex items-center gap-1"
+            title={label}
+          >
+            <IconType element={element} className="text-[16px]" title={label} />
+            {withLabels ? (
+              <span>{label}</span>
+            ) : (
+              <span className="sr-only">{label}</span>
+            )}
           </span>
         );
       })}

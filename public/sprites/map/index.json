@@ -1,0 +1,3018 @@
+{
+  "range": [
+    1,
+    251
+  ],
+  "count": 251,
+  "skipped": [
+    {
+      "dex": 1,
+      "name": "Bulbasaur",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 2,
+      "name": "Ivysaur",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 3,
+      "name": "Venusaur",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 4,
+      "name": "Charmander",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 5,
+      "name": "Charmeleon",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 6,
+      "name": "Charizard",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 7,
+      "name": "Squirtle",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 8,
+      "name": "Wartortle",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 9,
+      "name": "Blastoise",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 10,
+      "name": "Caterpie",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 11,
+      "name": "Metapod",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 12,
+      "name": "Butterfree",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 13,
+      "name": "Weedle",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 14,
+      "name": "Kakuna",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 15,
+      "name": "Beedrill",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 16,
+      "name": "Pidgey",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 17,
+      "name": "Pidgeotto",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 18,
+      "name": "Pidgeot",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 19,
+      "name": "Rattata",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 20,
+      "name": "Raticate",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 21,
+      "name": "Spearow",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 22,
+      "name": "Fearow",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 23,
+      "name": "Ekans",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 24,
+      "name": "Arbok",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 25,
+      "name": "Pikachu",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 26,
+      "name": "Raichu",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 27,
+      "name": "Sandshrew",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 28,
+      "name": "Sandslash",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 29,
+      "name": "Nidoran Female",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 30,
+      "name": "Nidorina",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 31,
+      "name": "Nidoqueen",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 32,
+      "name": "Nidoran Male",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 33,
+      "name": "Nidorino",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 34,
+      "name": "Nidoking",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 35,
+      "name": "Clefairy",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 36,
+      "name": "Clefable",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 37,
+      "name": "Vulpix",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 38,
+      "name": "Ninetales",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 39,
+      "name": "Jigglypuff",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 40,
+      "name": "Wigglytuff",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 41,
+      "name": "Zubat",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 42,
+      "name": "Golbat",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 43,
+      "name": "Oddish",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 44,
+      "name": "Gloom",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 45,
+      "name": "Vileplume",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 46,
+      "name": "Paras",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 47,
+      "name": "Parasect",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 48,
+      "name": "Venonat",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 49,
+      "name": "Venomoth",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 50,
+      "name": "Diglett",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 51,
+      "name": "Dugtrio",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 52,
+      "name": "Meowth",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 53,
+      "name": "Persian",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 54,
+      "name": "Psyduck",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 55,
+      "name": "Golduck",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 56,
+      "name": "Mankey",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 57,
+      "name": "Primeape",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 58,
+      "name": "Growlithe",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 59,
+      "name": "Arcanine",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 60,
+      "name": "Poliwag",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 61,
+      "name": "Poliwhirl",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 62,
+      "name": "Poliwrath",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 63,
+      "name": "Abra",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 64,
+      "name": "Kadabra",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 65,
+      "name": "Alakazam",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 66,
+      "name": "Machop",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 67,
+      "name": "Machoke",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 68,
+      "name": "Machamp",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 69,
+      "name": "Bellsprout",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 70,
+      "name": "Weepinbell",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 71,
+      "name": "Victreebel",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 72,
+      "name": "Tentacool",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 73,
+      "name": "Tentacruel",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 74,
+      "name": "Geodude",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 75,
+      "name": "Graveler",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 76,
+      "name": "Golem",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 77,
+      "name": "Ponyta",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 78,
+      "name": "Rapidash",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 79,
+      "name": "Slowpoke",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 80,
+      "name": "Slowbro",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 81,
+      "name": "Magnemite",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 82,
+      "name": "Magneton",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 83,
+      "name": "Farfetch'd",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 84,
+      "name": "Doduo",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 85,
+      "name": "Dodrio",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 86,
+      "name": "Seel",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 87,
+      "name": "Dewgong",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 88,
+      "name": "Grimer",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 89,
+      "name": "Muk",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 90,
+      "name": "Shellder",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 91,
+      "name": "Cloyster",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 92,
+      "name": "Gastly",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 93,
+      "name": "Haunter",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 94,
+      "name": "Gengar",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 95,
+      "name": "Onix",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 96,
+      "name": "Drowzee",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 97,
+      "name": "Hypno",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    },
+    {
+      "dex": 98,
+      "name": "Krabby",
+      "reason": "normal unmapped (wiki; +901 is ditto transform)"
+    }
+  ],
+  "formulas": {
+    "1-98 normal": "unmapped (wiki) \u2014 (dex+404)+901 is Ditto transform",
+    "1-98 shiny": "lookType = dex + 404 (best-effort; verify)",
+    "99-151": "lookType = dex - 98",
+    "152-201": "lookType = dex - 4",
+    "202-251": "lookType = dex + 22"
+  },
+  "sprites": [
+    {
+      "dex": 1,
+      "name": "Bulbasaur",
+      "lookType": 405,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/001.1.png",
+      "w": 81,
+      "h": 87
+    },
+    {
+      "dex": 2,
+      "name": "Ivysaur",
+      "lookType": 406,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/002.1.png",
+      "w": 93,
+      "h": 102
+    },
+    {
+      "dex": 3,
+      "name": "Venusaur",
+      "lookType": 407,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/003.1.png",
+      "w": 159,
+      "h": 144
+    },
+    {
+      "dex": 4,
+      "name": "Charmander",
+      "lookType": 408,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/004.1.png",
+      "w": 87,
+      "h": 99
+    },
+    {
+      "dex": 5,
+      "name": "Charmeleon",
+      "lookType": 409,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/005.1.png",
+      "w": 81,
+      "h": 99
+    },
+    {
+      "dex": 6,
+      "name": "Charizard",
+      "lookType": 410,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/006.1.png",
+      "w": 162,
+      "h": 156
+    },
+    {
+      "dex": 7,
+      "name": "Squirtle",
+      "lookType": 411,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/007.1.png",
+      "w": 78,
+      "h": 87
+    },
+    {
+      "dex": 8,
+      "name": "Wartortle",
+      "lookType": 412,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/008.1.png",
+      "w": 96,
+      "h": 99
+    },
+    {
+      "dex": 9,
+      "name": "Blastoise",
+      "lookType": 413,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/009.1.png",
+      "w": 162,
+      "h": 144
+    },
+    {
+      "dex": 10,
+      "name": "Caterpie",
+      "lookType": 414,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/010.1.png",
+      "w": 57,
+      "h": 72
+    },
+    {
+      "dex": 11,
+      "name": "Metapod",
+      "lookType": 415,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/011.1.png",
+      "w": 57,
+      "h": 81
+    },
+    {
+      "dex": 12,
+      "name": "Butterfree",
+      "lookType": 416,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/012.1.png",
+      "w": 114,
+      "h": 96
+    },
+    {
+      "dex": 13,
+      "name": "Weedle",
+      "lookType": 417,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/013.1.png",
+      "w": 51,
+      "h": 75
+    },
+    {
+      "dex": 14,
+      "name": "Kakuna",
+      "lookType": 418,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/014.1.png",
+      "w": 57,
+      "h": 81
+    },
+    {
+      "dex": 15,
+      "name": "Beedrill",
+      "lookType": 419,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/015.1.png",
+      "w": 111,
+      "h": 126
+    },
+    {
+      "dex": 16,
+      "name": "Pidgey",
+      "lookType": 420,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/016.1.png",
+      "w": 57,
+      "h": 81
+    },
+    {
+      "dex": 17,
+      "name": "Pidgeotto",
+      "lookType": 421,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/017.1.png",
+      "w": 81,
+      "h": 111
+    },
+    {
+      "dex": 18,
+      "name": "Pidgeot",
+      "lookType": 422,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/018.1.png",
+      "w": 111,
+      "h": 156
+    },
+    {
+      "dex": 19,
+      "name": "Rattata",
+      "lookType": 423,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/019.1.png",
+      "w": 60,
+      "h": 78
+    },
+    {
+      "dex": 20,
+      "name": "Raticate",
+      "lookType": 424,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/020.1.png",
+      "w": 108,
+      "h": 108
+    },
+    {
+      "dex": 21,
+      "name": "Spearow",
+      "lookType": 425,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/021.1.png",
+      "w": 57,
+      "h": 78
+    },
+    {
+      "dex": 22,
+      "name": "Fearow",
+      "lookType": 426,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/022.1.png",
+      "w": 198,
+      "h": 126
+    },
+    {
+      "dex": 23,
+      "name": "Ekans",
+      "lookType": 427,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/023.1.png",
+      "w": 108,
+      "h": 111
+    },
+    {
+      "dex": 24,
+      "name": "Arbok",
+      "lookType": 428,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/024.1.png",
+      "w": 153,
+      "h": 165
+    },
+    {
+      "dex": 25,
+      "name": "Pikachu",
+      "lookType": 429,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/025.1.png",
+      "w": 69,
+      "h": 93
+    },
+    {
+      "dex": 26,
+      "name": "Raichu",
+      "lookType": 430,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/026.1.png",
+      "w": 111,
+      "h": 99
+    },
+    {
+      "dex": 27,
+      "name": "Sandshrew",
+      "lookType": 431,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/027.1.png",
+      "w": 66,
+      "h": 75
+    },
+    {
+      "dex": 28,
+      "name": "Sandslash",
+      "lookType": 432,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/028.1.png",
+      "w": 111,
+      "h": 123
+    },
+    {
+      "dex": 29,
+      "name": "Nidoran Female",
+      "lookType": 433,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/029.1.png",
+      "w": 69,
+      "h": 72
+    },
+    {
+      "dex": 30,
+      "name": "Nidorina",
+      "lookType": 434,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/030.1.png",
+      "w": 84,
+      "h": 84
+    },
+    {
+      "dex": 31,
+      "name": "Nidoqueen",
+      "lookType": 435,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/031.1.png",
+      "w": 141,
+      "h": 156
+    },
+    {
+      "dex": 32,
+      "name": "Nidoran Male",
+      "lookType": 436,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/032.1.png",
+      "w": 69,
+      "h": 72
+    },
+    {
+      "dex": 33,
+      "name": "Nidorino",
+      "lookType": 437,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/033.1.png",
+      "w": 81,
+      "h": 84
+    },
+    {
+      "dex": 34,
+      "name": "Nidoking",
+      "lookType": 438,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/034.1.png",
+      "w": 171,
+      "h": 153
+    },
+    {
+      "dex": 35,
+      "name": "Clefairy",
+      "lookType": 439,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/035.1.png",
+      "w": 84,
+      "h": 81
+    },
+    {
+      "dex": 36,
+      "name": "Clefable",
+      "lookType": 440,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/036.1.png",
+      "w": 117,
+      "h": 108
+    },
+    {
+      "dex": 37,
+      "name": "Vulpix",
+      "lookType": 441,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/037.1.png",
+      "w": 69,
+      "h": 87
+    },
+    {
+      "dex": 38,
+      "name": "Ninetales",
+      "lookType": 442,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/038.1.png",
+      "w": 165,
+      "h": 156
+    },
+    {
+      "dex": 39,
+      "name": "Jigglypuff",
+      "lookType": 443,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/039.1.png",
+      "w": 69,
+      "h": 75
+    },
+    {
+      "dex": 40,
+      "name": "Wigglytuff",
+      "lookType": 444,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/040.1.png",
+      "w": 105,
+      "h": 126
+    },
+    {
+      "dex": 41,
+      "name": "Zubat",
+      "lookType": 445,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/041.1.png",
+      "w": 63,
+      "h": 99
+    },
+    {
+      "dex": 42,
+      "name": "Golbat",
+      "lookType": 446,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/042.1.png",
+      "w": 141,
+      "h": 108
+    },
+    {
+      "dex": 43,
+      "name": "Oddish",
+      "lookType": 447,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/043.1.png",
+      "w": 75,
+      "h": 81
+    },
+    {
+      "dex": 44,
+      "name": "Gloom",
+      "lookType": 448,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/044.1.png",
+      "w": 99,
+      "h": 93
+    },
+    {
+      "dex": 45,
+      "name": "Vileplume",
+      "lookType": 449,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/045.1.png",
+      "w": 147,
+      "h": 111
+    },
+    {
+      "dex": 46,
+      "name": "Paras",
+      "lookType": 450,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/046.1.png",
+      "w": 84,
+      "h": 60
+    },
+    {
+      "dex": 47,
+      "name": "Parasect",
+      "lookType": 451,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/047.1.png",
+      "w": 132,
+      "h": 126
+    },
+    {
+      "dex": 48,
+      "name": "Venonat",
+      "lookType": 452,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/048.1.png",
+      "w": 69,
+      "h": 75
+    },
+    {
+      "dex": 49,
+      "name": "Venomoth",
+      "lookType": 453,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/049.1.png",
+      "w": 114,
+      "h": 108
+    },
+    {
+      "dex": 50,
+      "name": "Diglett",
+      "lookType": 454,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/050.1.png",
+      "w": 78,
+      "h": 72
+    },
+    {
+      "dex": 51,
+      "name": "Dugtrio",
+      "lookType": 455,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/051.1.png",
+      "w": 114,
+      "h": 105
+    },
+    {
+      "dex": 52,
+      "name": "Meowth",
+      "lookType": 456,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/052.1.png",
+      "w": 96,
+      "h": 93
+    },
+    {
+      "dex": 53,
+      "name": "Persian",
+      "lookType": 457,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/053.1.png",
+      "w": 90,
+      "h": 132
+    },
+    {
+      "dex": 54,
+      "name": "Psyduck",
+      "lookType": 458,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/054.1.png",
+      "w": 78,
+      "h": 93
+    },
+    {
+      "dex": 55,
+      "name": "Golduck",
+      "lookType": 459,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/055.1.png",
+      "w": 135,
+      "h": 123
+    },
+    {
+      "dex": 56,
+      "name": "Mankey",
+      "lookType": 460,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/056.1.png",
+      "w": 84,
+      "h": 78
+    },
+    {
+      "dex": 57,
+      "name": "Primeape",
+      "lookType": 461,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/057.1.png",
+      "w": 147,
+      "h": 114
+    },
+    {
+      "dex": 58,
+      "name": "Growlithe",
+      "lookType": 462,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/058.1.png",
+      "w": 60,
+      "h": 96
+    },
+    {
+      "dex": 59,
+      "name": "Arcanine",
+      "lookType": 463,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/059.1.png",
+      "w": 114,
+      "h": 177
+    },
+    {
+      "dex": 60,
+      "name": "Poliwag",
+      "lookType": 464,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/060.1.png",
+      "w": 63,
+      "h": 90
+    },
+    {
+      "dex": 61,
+      "name": "Poliwhirl",
+      "lookType": 465,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/061.1.png",
+      "w": 117,
+      "h": 87
+    },
+    {
+      "dex": 62,
+      "name": "Poliwrath",
+      "lookType": 466,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/062.1.png",
+      "w": 153,
+      "h": 114
+    },
+    {
+      "dex": 63,
+      "name": "Abra",
+      "lookType": 467,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/063.1.png",
+      "w": 99,
+      "h": 90
+    },
+    {
+      "dex": 64,
+      "name": "Kadabra",
+      "lookType": 468,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/064.1.png",
+      "w": 117,
+      "h": 111
+    },
+    {
+      "dex": 65,
+      "name": "Alakazam",
+      "lookType": 469,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/065.1.png",
+      "w": 114,
+      "h": 111
+    },
+    {
+      "dex": 66,
+      "name": "Machop",
+      "lookType": 470,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/066.1.png",
+      "w": 84,
+      "h": 96
+    },
+    {
+      "dex": 67,
+      "name": "Machoke",
+      "lookType": 471,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/067.1.png",
+      "w": 132,
+      "h": 138
+    },
+    {
+      "dex": 68,
+      "name": "Machamp",
+      "lookType": 472,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/068.1.png",
+      "w": 165,
+      "h": 153
+    },
+    {
+      "dex": 69,
+      "name": "Bellsprout",
+      "lookType": 473,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/069.1.png",
+      "w": 87,
+      "h": 81
+    },
+    {
+      "dex": 70,
+      "name": "Weepinbell",
+      "lookType": 474,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/070.1.png",
+      "w": 108,
+      "h": 102
+    },
+    {
+      "dex": 71,
+      "name": "Victreebel",
+      "lookType": 475,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/071.1.png",
+      "w": 141,
+      "h": 147
+    },
+    {
+      "dex": 72,
+      "name": "Tentacool",
+      "lookType": 476,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/072.1.png",
+      "w": 69,
+      "h": 99
+    },
+    {
+      "dex": 73,
+      "name": "Tentacruel",
+      "lookType": 477,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/073.1.png",
+      "w": 177,
+      "h": 168
+    },
+    {
+      "dex": 74,
+      "name": "Geodude",
+      "lookType": 478,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/074.1.png",
+      "w": 117,
+      "h": 81
+    },
+    {
+      "dex": 75,
+      "name": "Graveler",
+      "lookType": 479,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/075.1.png",
+      "w": 123,
+      "h": 123
+    },
+    {
+      "dex": 76,
+      "name": "Golem",
+      "lookType": 480,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/076.1.png",
+      "w": 138,
+      "h": 132
+    },
+    {
+      "dex": 77,
+      "name": "Ponyta",
+      "lookType": 481,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/077.1.png",
+      "w": 69,
+      "h": 126
+    },
+    {
+      "dex": 78,
+      "name": "Rapidash",
+      "lookType": 482,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/078.1.png",
+      "w": 72,
+      "h": 171
+    },
+    {
+      "dex": 79,
+      "name": "Slowpoke",
+      "lookType": 483,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/079.1.png",
+      "w": 78,
+      "h": 111
+    },
+    {
+      "dex": 80,
+      "name": "Slowbro",
+      "lookType": 484,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/080.1.png",
+      "w": 90,
+      "h": 120
+    },
+    {
+      "dex": 81,
+      "name": "Magnemite",
+      "lookType": 485,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/081.1.png",
+      "w": 99,
+      "h": 75
+    },
+    {
+      "dex": 82,
+      "name": "Magneton",
+      "lookType": 486,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/082.1.png",
+      "w": 129,
+      "h": 126
+    },
+    {
+      "dex": 83,
+      "name": "Farfetch'd",
+      "lookType": 487,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/083.1.png",
+      "w": 75,
+      "h": 87
+    },
+    {
+      "dex": 84,
+      "name": "Doduo",
+      "lookType": 488,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/084.1.png",
+      "w": 123,
+      "h": 111
+    },
+    {
+      "dex": 85,
+      "name": "Dodrio",
+      "lookType": 489,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/085.1.png",
+      "w": 129,
+      "h": 153
+    },
+    {
+      "dex": 86,
+      "name": "Seel",
+      "lookType": 490,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/086.1.png",
+      "w": 111,
+      "h": 96
+    },
+    {
+      "dex": 87,
+      "name": "Dewgong",
+      "lookType": 491,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/087.1.png",
+      "w": 144,
+      "h": 126
+    },
+    {
+      "dex": 88,
+      "name": "Grimer",
+      "lookType": 492,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/088.1.png",
+      "w": 114,
+      "h": 90
+    },
+    {
+      "dex": 89,
+      "name": "Muk",
+      "lookType": 493,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/089.1.png",
+      "w": 150,
+      "h": 138
+    },
+    {
+      "dex": 90,
+      "name": "Shellder",
+      "lookType": 494,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/090.1.png",
+      "w": 75,
+      "h": 81
+    },
+    {
+      "dex": 91,
+      "name": "Cloyster",
+      "lookType": 495,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/091.1.png",
+      "w": 159,
+      "h": 129
+    },
+    {
+      "dex": 92,
+      "name": "Gastly",
+      "lookType": 496,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/092.1.png",
+      "w": 96,
+      "h": 102
+    },
+    {
+      "dex": 93,
+      "name": "Haunter",
+      "lookType": 497,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/093.1.png",
+      "w": 102,
+      "h": 96
+    },
+    {
+      "dex": 94,
+      "name": "Gengar",
+      "lookType": 498,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/094.1.png",
+      "w": 129,
+      "h": 117
+    },
+    {
+      "dex": 95,
+      "name": "Onix",
+      "lookType": 499,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/095.1.png",
+      "w": 108,
+      "h": 228
+    },
+    {
+      "dex": 96,
+      "name": "Drowzee",
+      "lookType": 500,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/096.1.png",
+      "w": 102,
+      "h": 93
+    },
+    {
+      "dex": 97,
+      "name": "Hypno",
+      "lookType": 501,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/097.1.png",
+      "w": 111,
+      "h": 108
+    },
+    {
+      "dex": 98,
+      "name": "Krabby",
+      "lookType": 502,
+      "shiny": true,
+      "formula": "dex + 404 (early shiny block; verify vs ditto)",
+      "src": "/sprites/map/098.1.png",
+      "w": 72,
+      "h": 87
+    },
+    {
+      "dex": 99,
+      "name": "Kingler",
+      "lookType": 1,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/099.png",
+      "w": 126,
+      "h": 159
+    },
+    {
+      "dex": 100,
+      "name": "Voltorb",
+      "lookType": 2,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/100.png",
+      "w": 81,
+      "h": 81
+    },
+    {
+      "dex": 101,
+      "name": "Electrode",
+      "lookType": 3,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/101.png",
+      "w": 102,
+      "h": 102
+    },
+    {
+      "dex": 102,
+      "name": "Exeggcute",
+      "lookType": 4,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/102.png",
+      "w": 108,
+      "h": 96
+    },
+    {
+      "dex": 103,
+      "name": "Exeggutor",
+      "lookType": 5,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/103.png",
+      "w": 132,
+      "h": 150
+    },
+    {
+      "dex": 104,
+      "name": "Cubone",
+      "lookType": 6,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/104.png",
+      "w": 96,
+      "h": 84
+    },
+    {
+      "dex": 105,
+      "name": "Marowak",
+      "lookType": 7,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/105.png",
+      "w": 105,
+      "h": 105
+    },
+    {
+      "dex": 106,
+      "name": "Hitmonlee",
+      "lookType": 8,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/106.png",
+      "w": 138,
+      "h": 123
+    },
+    {
+      "dex": 107,
+      "name": "Hitmonchan",
+      "lookType": 9,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/107.png",
+      "w": 105,
+      "h": 129
+    },
+    {
+      "dex": 108,
+      "name": "Lickitung",
+      "lookType": 10,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/108.png",
+      "w": 120,
+      "h": 117
+    },
+    {
+      "dex": 109,
+      "name": "Koffing",
+      "lookType": 11,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/109.png",
+      "w": 87,
+      "h": 87
+    },
+    {
+      "dex": 110,
+      "name": "Weezing",
+      "lookType": 12,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/110.png",
+      "w": 144,
+      "h": 111
+    },
+    {
+      "dex": 111,
+      "name": "Rhyhorn",
+      "lookType": 13,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/111.png",
+      "w": 123,
+      "h": 123
+    },
+    {
+      "dex": 112,
+      "name": "Rhydon",
+      "lookType": 14,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/112.png",
+      "w": 147,
+      "h": 135
+    },
+    {
+      "dex": 113,
+      "name": "Chansey",
+      "lookType": 15,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/113.png",
+      "w": 108,
+      "h": 102
+    },
+    {
+      "dex": 114,
+      "name": "Tangela",
+      "lookType": 16,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/114.png",
+      "w": 84,
+      "h": 87
+    },
+    {
+      "dex": 115,
+      "name": "Kangaskhan",
+      "lookType": 17,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/115.png",
+      "w": 147,
+      "h": 132
+    },
+    {
+      "dex": 116,
+      "name": "Horsea",
+      "lookType": 18,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/116.png",
+      "w": 72,
+      "h": 84
+    },
+    {
+      "dex": 117,
+      "name": "Seadra",
+      "lookType": 19,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/117.png",
+      "w": 123,
+      "h": 114
+    },
+    {
+      "dex": 118,
+      "name": "Goldeen",
+      "lookType": 20,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/118.png",
+      "w": 93,
+      "h": 81
+    },
+    {
+      "dex": 119,
+      "name": "Seaking",
+      "lookType": 21,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/119.png",
+      "w": 81,
+      "h": 84
+    },
+    {
+      "dex": 120,
+      "name": "Staryu",
+      "lookType": 22,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/120.png",
+      "w": 96,
+      "h": 90
+    },
+    {
+      "dex": 121,
+      "name": "Starmie",
+      "lookType": 23,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/121.png",
+      "w": 102,
+      "h": 99
+    },
+    {
+      "dex": 122,
+      "name": "Mr. Mime",
+      "lookType": 24,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/122.png",
+      "w": 108,
+      "h": 102
+    },
+    {
+      "dex": 123,
+      "name": "Scyther",
+      "lookType": 25,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/123.png",
+      "w": 129,
+      "h": 126
+    },
+    {
+      "dex": 124,
+      "name": "Jynx",
+      "lookType": 26,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/124.png",
+      "w": 165,
+      "h": 141
+    },
+    {
+      "dex": 125,
+      "name": "Electabuzz",
+      "lookType": 27,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/125.png",
+      "w": 135,
+      "h": 135
+    },
+    {
+      "dex": 126,
+      "name": "Magmar",
+      "lookType": 28,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/126.png",
+      "w": 144,
+      "h": 144
+    },
+    {
+      "dex": 127,
+      "name": "Pinsir",
+      "lookType": 29,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/127.png",
+      "w": 138,
+      "h": 132
+    },
+    {
+      "dex": 128,
+      "name": "Tauros",
+      "lookType": 30,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/128.png",
+      "w": 93,
+      "h": 162
+    },
+    {
+      "dex": 129,
+      "name": "Magikarp",
+      "lookType": 31,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/129.png",
+      "w": 87,
+      "h": 72
+    },
+    {
+      "dex": 130,
+      "name": "Gyarados",
+      "lookType": 32,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/130.png",
+      "w": 162,
+      "h": 225
+    },
+    {
+      "dex": 131,
+      "name": "Lapras",
+      "lookType": 33,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/131.png",
+      "w": 201,
+      "h": 162
+    },
+    {
+      "dex": 132,
+      "name": "Ditto",
+      "lookType": 34,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/132.png",
+      "w": 81,
+      "h": 69
+    },
+    {
+      "dex": 133,
+      "name": "Eevee",
+      "lookType": 35,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/133.png",
+      "w": 75,
+      "h": 96
+    },
+    {
+      "dex": 134,
+      "name": "Vaporeon",
+      "lookType": 36,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/134.png",
+      "w": 123,
+      "h": 129
+    },
+    {
+      "dex": 135,
+      "name": "Jolteon",
+      "lookType": 37,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/135.png",
+      "w": 99,
+      "h": 108
+    },
+    {
+      "dex": 136,
+      "name": "Flareon",
+      "lookType": 38,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/136.png",
+      "w": 93,
+      "h": 108
+    },
+    {
+      "dex": 137,
+      "name": "Porygon",
+      "lookType": 39,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/137.png",
+      "w": 84,
+      "h": 84
+    },
+    {
+      "dex": 138,
+      "name": "Omanyte",
+      "lookType": 40,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/138.png",
+      "w": 75,
+      "h": 90
+    },
+    {
+      "dex": 139,
+      "name": "Omastar",
+      "lookType": 41,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/139.png",
+      "w": 111,
+      "h": 114
+    },
+    {
+      "dex": 140,
+      "name": "Kabuto",
+      "lookType": 42,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/140.png",
+      "w": 78,
+      "h": 66
+    },
+    {
+      "dex": 141,
+      "name": "Kabutops",
+      "lookType": 43,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/141.png",
+      "w": 135,
+      "h": 138
+    },
+    {
+      "dex": 142,
+      "name": "Aerodactyl",
+      "lookType": 44,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/142.png",
+      "w": 201,
+      "h": 150
+    },
+    {
+      "dex": 143,
+      "name": "Snorlax",
+      "lookType": 45,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/143.png",
+      "w": 171,
+      "h": 174
+    },
+    {
+      "dex": 144,
+      "name": "Articuno",
+      "lookType": 46,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/144.png",
+      "w": 207,
+      "h": 207
+    },
+    {
+      "dex": 145,
+      "name": "Zapdos",
+      "lookType": 47,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/145.png",
+      "w": 261,
+      "h": 159
+    },
+    {
+      "dex": 146,
+      "name": "Moltres",
+      "lookType": 48,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/146.png",
+      "w": 333,
+      "h": 201
+    },
+    {
+      "dex": 147,
+      "name": "Dratini",
+      "lookType": 49,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/147.png",
+      "w": 72,
+      "h": 78
+    },
+    {
+      "dex": 148,
+      "name": "Dragonair",
+      "lookType": 50,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/148.png",
+      "w": 120,
+      "h": 150
+    },
+    {
+      "dex": 149,
+      "name": "Dragonite",
+      "lookType": 51,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/149.png",
+      "w": 159,
+      "h": 201
+    },
+    {
+      "dex": 150,
+      "name": "Mewtwo",
+      "lookType": 52,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/150.png",
+      "w": 111,
+      "h": 174
+    },
+    {
+      "dex": 151,
+      "name": "Mew",
+      "lookType": 53,
+      "shiny": false,
+      "formula": "dex - 98",
+      "src": "/sprites/map/151.png",
+      "w": 84,
+      "h": 135
+    },
+    {
+      "dex": 152,
+      "name": "Chikorita",
+      "lookType": 148,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/152.png",
+      "w": 63,
+      "h": 105
+    },
+    {
+      "dex": 153,
+      "name": "Bayleef",
+      "lookType": 149,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/153.png",
+      "w": 75,
+      "h": 156
+    },
+    {
+      "dex": 154,
+      "name": "Meganium",
+      "lookType": 150,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/154.png",
+      "w": 123,
+      "h": 162
+    },
+    {
+      "dex": 155,
+      "name": "Cyndaquil",
+      "lookType": 151,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/155.png",
+      "w": 57,
+      "h": 78
+    },
+    {
+      "dex": 156,
+      "name": "Quilava",
+      "lookType": 152,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/156.png",
+      "w": 72,
+      "h": 87
+    },
+    {
+      "dex": 157,
+      "name": "Typhlosion",
+      "lookType": 153,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/157.png",
+      "w": 105,
+      "h": 138
+    },
+    {
+      "dex": 158,
+      "name": "Totodile",
+      "lookType": 154,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/158.png",
+      "w": 93,
+      "h": 99
+    },
+    {
+      "dex": 159,
+      "name": "Croconaw",
+      "lookType": 155,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/159.png",
+      "w": 99,
+      "h": 129
+    },
+    {
+      "dex": 160,
+      "name": "Feraligatr",
+      "lookType": 156,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/160.png",
+      "w": 141,
+      "h": 159
+    },
+    {
+      "dex": 161,
+      "name": "Sentret",
+      "lookType": 157,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/161.png",
+      "w": 75,
+      "h": 111
+    },
+    {
+      "dex": 162,
+      "name": "Furret",
+      "lookType": 158,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/162.png",
+      "w": 63,
+      "h": 102
+    },
+    {
+      "dex": 163,
+      "name": "Hoothoot",
+      "lookType": 159,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/163.png",
+      "w": 84,
+      "h": 90
+    },
+    {
+      "dex": 164,
+      "name": "Noctowl",
+      "lookType": 160,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/164.png",
+      "w": 78,
+      "h": 126
+    },
+    {
+      "dex": 165,
+      "name": "Ledyba",
+      "lookType": 161,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/165.png",
+      "w": 117,
+      "h": 78
+    },
+    {
+      "dex": 166,
+      "name": "Ledian",
+      "lookType": 162,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/166.png",
+      "w": 99,
+      "h": 111
+    },
+    {
+      "dex": 167,
+      "name": "Spinarak",
+      "lookType": 163,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/167.png",
+      "w": 81,
+      "h": 66
+    },
+    {
+      "dex": 168,
+      "name": "Ariados",
+      "lookType": 164,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/168.png",
+      "w": 132,
+      "h": 147
+    },
+    {
+      "dex": 169,
+      "name": "Crobat",
+      "lookType": 165,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/169.png",
+      "w": 165,
+      "h": 105
+    },
+    {
+      "dex": 170,
+      "name": "Chinchou",
+      "lookType": 166,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/170.png",
+      "w": 111,
+      "h": 84
+    },
+    {
+      "dex": 171,
+      "name": "Lanturn",
+      "lookType": 167,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/171.png",
+      "w": 111,
+      "h": 111
+    },
+    {
+      "dex": 172,
+      "name": "Pichu",
+      "lookType": 168,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/172.png",
+      "w": 75,
+      "h": 78
+    },
+    {
+      "dex": 173,
+      "name": "Cleffa",
+      "lookType": 169,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/173.png",
+      "w": 72,
+      "h": 75
+    },
+    {
+      "dex": 174,
+      "name": "Igglybuff",
+      "lookType": 170,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/174.png",
+      "w": 63,
+      "h": 75
+    },
+    {
+      "dex": 175,
+      "name": "Togepi",
+      "lookType": 171,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/175.png",
+      "w": 75,
+      "h": 81
+    },
+    {
+      "dex": 176,
+      "name": "Togetic",
+      "lookType": 172,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/176.png",
+      "w": 93,
+      "h": 126
+    },
+    {
+      "dex": 177,
+      "name": "Natu",
+      "lookType": 173,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/177.png",
+      "w": 63,
+      "h": 66
+    },
+    {
+      "dex": 178,
+      "name": "Xatu",
+      "lookType": 174,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/178.png",
+      "w": 87,
+      "h": 111
+    },
+    {
+      "dex": 179,
+      "name": "Mareep",
+      "lookType": 175,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/179.png",
+      "w": 78,
+      "h": 96
+    },
+    {
+      "dex": 180,
+      "name": "Flaaffy",
+      "lookType": 176,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/180.png",
+      "w": 78,
+      "h": 114
+    },
+    {
+      "dex": 181,
+      "name": "Ampharos",
+      "lookType": 177,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/181.png",
+      "w": 87,
+      "h": 147
+    },
+    {
+      "dex": 182,
+      "name": "Bellossom",
+      "lookType": 178,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/182.png",
+      "w": 75,
+      "h": 93
+    },
+    {
+      "dex": 183,
+      "name": "Marill",
+      "lookType": 179,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/183.png",
+      "w": 87,
+      "h": 72
+    },
+    {
+      "dex": 184,
+      "name": "Azumarill",
+      "lookType": 180,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/184.png",
+      "w": 102,
+      "h": 108
+    },
+    {
+      "dex": 185,
+      "name": "Sudowoodo",
+      "lookType": 181,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/185.png",
+      "w": 138,
+      "h": 159
+    },
+    {
+      "dex": 186,
+      "name": "Politoed",
+      "lookType": 182,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/186.png",
+      "w": 99,
+      "h": 120
+    },
+    {
+      "dex": 187,
+      "name": "Hoppip",
+      "lookType": 183,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/187.png",
+      "w": 90,
+      "h": 75
+    },
+    {
+      "dex": 188,
+      "name": "Skiploom",
+      "lookType": 184,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/188.png",
+      "w": 93,
+      "h": 75
+    },
+    {
+      "dex": 189,
+      "name": "Jumpluff",
+      "lookType": 185,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/189.png",
+      "w": 111,
+      "h": 102
+    },
+    {
+      "dex": 190,
+      "name": "Aipom",
+      "lookType": 186,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/190.png",
+      "w": 102,
+      "h": 81
+    },
+    {
+      "dex": 191,
+      "name": "Sunkern",
+      "lookType": 187,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/191.png",
+      "w": 69,
+      "h": 66
+    },
+    {
+      "dex": 192,
+      "name": "Sunflora",
+      "lookType": 188,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/192.png",
+      "w": 87,
+      "h": 99
+    },
+    {
+      "dex": 193,
+      "name": "Yanma",
+      "lookType": 189,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/193.png",
+      "w": 126,
+      "h": 114
+    },
+    {
+      "dex": 194,
+      "name": "Wooper",
+      "lookType": 190,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/194.png",
+      "w": 81,
+      "h": 69
+    },
+    {
+      "dex": 195,
+      "name": "Quagsire",
+      "lookType": 191,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/195.png",
+      "w": 84,
+      "h": 117
+    },
+    {
+      "dex": 196,
+      "name": "Espeon",
+      "lookType": 192,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/196.png",
+      "w": 105,
+      "h": 129
+    },
+    {
+      "dex": 197,
+      "name": "Umbreon",
+      "lookType": 193,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/197.png",
+      "w": 87,
+      "h": 120
+    },
+    {
+      "dex": 198,
+      "name": "Murkrow",
+      "lookType": 194,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/198.png",
+      "w": 114,
+      "h": 90
+    },
+    {
+      "dex": 199,
+      "name": "Slowking",
+      "lookType": 195,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/199.png",
+      "w": 93,
+      "h": 147
+    },
+    {
+      "dex": 200,
+      "name": "Misdreavus",
+      "lookType": 196,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/200.png",
+      "w": 75,
+      "h": 96
+    },
+    {
+      "dex": 201,
+      "name": "Unown",
+      "lookType": 197,
+      "shiny": false,
+      "formula": "dex - 4",
+      "src": "/sprites/map/201.png",
+      "w": 45,
+      "h": 66
+    },
+    {
+      "dex": 202,
+      "name": "Wobbuffet",
+      "lookType": 224,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/202.png",
+      "w": 72,
+      "h": 99
+    },
+    {
+      "dex": 203,
+      "name": "Girafarig",
+      "lookType": 225,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/203.png",
+      "w": 75,
+      "h": 150
+    },
+    {
+      "dex": 204,
+      "name": "Pineco",
+      "lookType": 226,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/204.png",
+      "w": 75,
+      "h": 87
+    },
+    {
+      "dex": 205,
+      "name": "Forretress",
+      "lookType": 227,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/205.png",
+      "w": 138,
+      "h": 105
+    },
+    {
+      "dex": 206,
+      "name": "Dunsparce",
+      "lookType": 228,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/206.png",
+      "w": 93,
+      "h": 102
+    },
+    {
+      "dex": 207,
+      "name": "Gligar",
+      "lookType": 229,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/207.png",
+      "w": 129,
+      "h": 114
+    },
+    {
+      "dex": 208,
+      "name": "Steelix",
+      "lookType": 230,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/208.png",
+      "w": 174,
+      "h": 237
+    },
+    {
+      "dex": 209,
+      "name": "Snubbull",
+      "lookType": 231,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/209.png",
+      "w": 87,
+      "h": 81
+    },
+    {
+      "dex": 210,
+      "name": "Granbull",
+      "lookType": 232,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/210.png",
+      "w": 99,
+      "h": 114
+    },
+    {
+      "dex": 211,
+      "name": "Qwilfish",
+      "lookType": 233,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/211.png",
+      "w": 90,
+      "h": 102
+    },
+    {
+      "dex": 212,
+      "name": "Scizor",
+      "lookType": 234,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/212.png",
+      "w": 129,
+      "h": 132
+    },
+    {
+      "dex": 213,
+      "name": "Shuckle",
+      "lookType": 235,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/213.png",
+      "w": 84,
+      "h": 81
+    },
+    {
+      "dex": 214,
+      "name": "Heracross",
+      "lookType": 236,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/214.png",
+      "w": 111,
+      "h": 120
+    },
+    {
+      "dex": 215,
+      "name": "Sneasel",
+      "lookType": 237,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/215.png",
+      "w": 87,
+      "h": 117
+    },
+    {
+      "dex": 216,
+      "name": "Teddiursa",
+      "lookType": 238,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/216.png",
+      "w": 69,
+      "h": 84
+    },
+    {
+      "dex": 217,
+      "name": "Ursaring",
+      "lookType": 239,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/217.png",
+      "w": 147,
+      "h": 150
+    },
+    {
+      "dex": 218,
+      "name": "Slugma",
+      "lookType": 240,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/218.png",
+      "w": 57,
+      "h": 72
+    },
+    {
+      "dex": 219,
+      "name": "Magcargo",
+      "lookType": 241,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/219.png",
+      "w": 69,
+      "h": 108
+    },
+    {
+      "dex": 220,
+      "name": "Swinub",
+      "lookType": 242,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/220.png",
+      "w": 63,
+      "h": 57
+    },
+    {
+      "dex": 221,
+      "name": "Piloswine",
+      "lookType": 243,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/221.png",
+      "w": 108,
+      "h": 120
+    },
+    {
+      "dex": 222,
+      "name": "Corsola",
+      "lookType": 244,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/222.png",
+      "w": 87,
+      "h": 87
+    },
+    {
+      "dex": 223,
+      "name": "Remoraid",
+      "lookType": 245,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/223.png",
+      "w": 51,
+      "h": 72
+    },
+    {
+      "dex": 224,
+      "name": "Octillery",
+      "lookType": 246,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/224.png",
+      "w": 105,
+      "h": 93
+    },
+    {
+      "dex": 225,
+      "name": "Delibird",
+      "lookType": 247,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/225.png",
+      "w": 99,
+      "h": 114
+    },
+    {
+      "dex": 226,
+      "name": "Mantine",
+      "lookType": 248,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/226.png",
+      "w": 192,
+      "h": 126
+    },
+    {
+      "dex": 227,
+      "name": "Skarmory",
+      "lookType": 249,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/227.png",
+      "w": 87,
+      "h": 165
+    },
+    {
+      "dex": 228,
+      "name": "Houndour",
+      "lookType": 250,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/228.png",
+      "w": 57,
+      "h": 84
+    },
+    {
+      "dex": 229,
+      "name": "Houndoom",
+      "lookType": 251,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/229.png",
+      "w": 84,
+      "h": 132
+    },
+    {
+      "dex": 230,
+      "name": "Kingdra",
+      "lookType": 252,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/230.png",
+      "w": 87,
+      "h": 150
+    },
+    {
+      "dex": 231,
+      "name": "Phanpy",
+      "lookType": 253,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/231.png",
+      "w": 60,
+      "h": 63
+    },
+    {
+      "dex": 232,
+      "name": "Donphan",
+      "lookType": 254,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/232.png",
+      "w": 153,
+      "h": 114
+    },
+    {
+      "dex": 233,
+      "name": "Porygon2",
+      "lookType": 255,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/233.png",
+      "w": 78,
+      "h": 96
+    },
+    {
+      "dex": 234,
+      "name": "Stantler",
+      "lookType": 256,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/234.png",
+      "w": 138,
+      "h": 189
+    },
+    {
+      "dex": 235,
+      "name": "Smeargle",
+      "lookType": 257,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/235.png",
+      "w": 111,
+      "h": 117
+    },
+    {
+      "dex": 236,
+      "name": "Tyrogue",
+      "lookType": 258,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/236.png",
+      "w": 69,
+      "h": 105
+    },
+    {
+      "dex": 237,
+      "name": "Hitmontop",
+      "lookType": 259,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/237.png",
+      "w": 96,
+      "h": 102
+    },
+    {
+      "dex": 238,
+      "name": "Smoochum",
+      "lookType": 260,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/238.png",
+      "w": 69,
+      "h": 84
+    },
+    {
+      "dex": 239,
+      "name": "Elekid",
+      "lookType": 261,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/239.png",
+      "w": 111,
+      "h": 108
+    },
+    {
+      "dex": 240,
+      "name": "Magby",
+      "lookType": 262,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/240.png",
+      "w": 75,
+      "h": 96
+    },
+    {
+      "dex": 241,
+      "name": "Miltank",
+      "lookType": 263,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/241.png",
+      "w": 123,
+      "h": 132
+    },
+    {
+      "dex": 242,
+      "name": "Blissey",
+      "lookType": 264,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/242.png",
+      "w": 126,
+      "h": 114
+    },
+    {
+      "dex": 243,
+      "name": "Raikou",
+      "lookType": 265,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/243.png",
+      "w": 111,
+      "h": 210
+    },
+    {
+      "dex": 244,
+      "name": "Entei",
+      "lookType": 266,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/244.png",
+      "w": 183,
+      "h": 189
+    },
+    {
+      "dex": 245,
+      "name": "Suicune",
+      "lookType": 267,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/245.png",
+      "w": 162,
+      "h": 180
+    },
+    {
+      "dex": 246,
+      "name": "Larvitar",
+      "lookType": 268,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/246.png",
+      "w": 66,
+      "h": 105
+    },
+    {
+      "dex": 247,
+      "name": "Pupitar",
+      "lookType": 269,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/247.png",
+      "w": 99,
+      "h": 108
+    },
+    {
+      "dex": 248,
+      "name": "Tyranitar",
+      "lookType": 270,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/248.png",
+      "w": 153,
+      "h": 192
+    },
+    {
+      "dex": 249,
+      "name": "Lugia",
+      "lookType": 271,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/249.png",
+      "w": 504,
+      "h": 216
+    },
+    {
+      "dex": 250,
+      "name": "Ho-Oh",
+      "lookType": 272,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/250.png",
+      "w": 432,
+      "h": 309
+    },
+    {
+      "dex": 251,
+      "name": "Celebi",
+      "lookType": 273,
+      "shiny": false,
+      "formula": "dex + 22",
+      "src": "/sprites/map/251.png",
+      "w": 63,
+      "h": 84
+    }
+  ]
+}

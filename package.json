@@ -2,14 +2,22 @@
   "name": "pkatrade",
   "version": "0.1.0",
   "private": true,
-    "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start",
-      "lint": "eslint",
-      "catalog": "node scripts/build-catalog.mjs"
-    },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "catalog": "node scripts/build-catalog.mjs",
+    "map-sprites": "node scripts/build-map-sprite-index.mjs",
+    "sprites:export": "python scripts/export-mapped-sprites.py",
+    "sprites:gaps": "node scripts/scan-sprite-gaps.mjs",
+    "badges": "python scripts/gen-pixel-badges.py",
+    "hero": "python scripts/gen-hero-banner.py",
+    "world-bg": "python scripts/gen-world-bg.py"
+  },
   "dependencies": {
+    "@pokemonle/icons-react": "^0.0.3",
+    "lucide-react": "^1.45.0",
     "next": "16.3.5",
     "react": "19.2.8",
     "react-dom": "19.2.8"
@@ -25,3 +33,4 @@
     "typescript": "^5"
   }
 }
+

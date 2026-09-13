@@ -1,8 +1,8 @@
 {
   "source": "https://wiki.pokealliance.com/api/pokemon",
   "wiki": "https://wiki.pokealliance.com/pokemon",
-  "count": 910,
-  "generatedAt": "2026-09-12T03:45:45.602Z",
+  "count": 912,
+  "generatedAt": "2026-09-13T20:08:13.211Z",
   "pokemon": [
     {
       "id": "gen/1/001_bulbasaur",
@@ -14901,6 +14901,38 @@
       "image": "/pokemon/671.1.png",
       "elements": [
         "fairy"
+      ]
+    },
+    {
+      "id": "gen/6/673_gogoat",
+      "dex": 673,
+      "number": "673",
+      "name": "Gogoat",
+      "displayName": "Gogoat",
+      "generation": 6,
+      "tier": 3,
+      "level": 100,
+      "role": "PVE",
+      "shiny": false,
+      "image": "/pokemon/673.png",
+      "elements": [
+        "grass"
+      ]
+    },
+    {
+      "id": "shiny/673_shiny_gogoat",
+      "dex": 673,
+      "number": "673",
+      "name": "Gogoat",
+      "displayName": "Shiny Gogoat",
+      "generation": 6,
+      "tier": 2,
+      "level": 120,
+      "role": "PVE",
+      "shiny": true,
+      "image": "/pokemon/673.1.png",
+      "elements": [
+        "grass"
       ]
     },
     {

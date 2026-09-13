@@ -17,9 +17,7 @@ export function OptionChips({
 }) {
   return (
     <fieldset>
-      <legend className="text-[11px] uppercase tracking-[0.1em] text-muted">
-        {label}
-      </legend>
+      <legend className="rpg-label mb-0">{label}</legend>
       <div
         className={
           columns === 3
@@ -33,12 +31,9 @@ export function OptionChips({
             <button
               key={option.id}
               type="button"
+              data-active={active}
               onClick={() => onChange(option.id)}
-              className={
-                active
-                  ? "border border-brass bg-brass/20 px-2.5 py-1.5 text-left text-[12px] text-ink"
-                  : "border border-line bg-card px-2.5 py-1.5 text-left text-[12px] text-ink-soft hover:border-ink/35"
-              }
+              className="rpg-chip"
             >
               {option.label}
             </button>

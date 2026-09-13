@@ -55,11 +55,9 @@ export function HeldPicker({
 
   return (
     <fieldset>
-      <legend className="text-[11px] uppercase tracking-[0.1em] text-muted">
-        Itens Held (até {MAX_HELDS})
-      </legend>
+      <legend className="rpg-label mb-0">Itens Held (até {MAX_HELDS})</legend>
 
-      <div className="mt-2 min-h-[40px] rounded border border-line bg-card px-2.5 py-2">
+      <div className="rpg-inset mt-2 min-h-[40px] px-2.5 py-2">
         {value.length === 0 ? (
           <p className="text-[12px] text-muted">Nenhum held selecionado</p>
         ) : (
@@ -69,11 +67,12 @@ export function HeldPicker({
                 <button
                   type="button"
                   onClick={() => remove(id)}
-                  className="inline-flex items-center gap-1.5 border border-brass/50 bg-brass/15 px-2 py-1 text-[12px] text-ink hover:bg-brass/25"
+                  className="rpg-chip inline-flex items-center gap-1.5"
+                  data-active="true"
                   title="Remover"
                 >
                   {heldLabel(id)}
-                  <span aria-hidden className="text-muted">
+                  <span aria-hidden className="opacity-60">
                     ×
                   </span>
                 </button>
@@ -84,24 +83,16 @@ export function HeldPicker({
       </div>
 
       <div className="mt-2 flex flex-wrap items-center gap-2">
-        <div className="flex text-[13px]">
-          {(["X", "Y"] as const).map((g, index) => (
+        <div className="rpg-seg">
+          {(["X", "Y"] as const).map((g) => (
             <button
               key={g}
               type="button"
+              data-active={group === g}
               onClick={() => {
                 setGroup(g);
                 setFamilyId(null);
               }}
-              className={
-                group === g
-                  ? `border border-brass bg-brass/25 px-3 py-1.5 text-ink ${
-                      index > 0 ? "-ml-px" : ""
-                    }`
-                  : `border border-line bg-card px-3 py-1.5 text-muted hover:text-ink ${
-                      index > 0 ? "-ml-px" : ""
-                    }`
-              }
             >
               Held {g}
             </button>
@@ -111,7 +102,7 @@ export function HeldPicker({
         <button
           type="button"
           onClick={clear}
-          className="ml-auto text-[12px] text-muted underline decoration-line underline-offset-2 hover:text-ink"
+          className="ml-auto text-[12px] font-bold text-olive underline underline-offset-2"
         >
           Sem held
         </button>
@@ -125,18 +116,15 @@ export function HeldPicker({
             <button
               key={family.id}
               type="button"
+              data-active={selected}
               onClick={() =>
                 setFamilyId((current) =>
                   current === family.id ? null : family.id,
                 )
               }
-              className={
-                selected
-                  ? "border border-brass bg-brass/20 px-2.5 py-2 text-left text-[13px] text-ink"
-                  : "border border-line bg-card px-2.5 py-2 text-left text-[13px] text-ink-soft hover:border-brass/40"
-              }
+              className="rpg-chip"
             >
-              <span className="block text-[10px] uppercase tracking-[0.08em] text-muted">
+              <span className="mb-0.5 block text-[10px] font-extrabold uppercase tracking-[0.08em] opacity-70">
                 {family.group}
               </span>
               {short}
@@ -146,11 +134,11 @@ export function HeldPicker({
       </div>
 
       {activeFamily ? (
-        <div className="mt-2 border border-line bg-paper-deep/40 px-3 py-3">
-          <p className="text-[12px] text-ink-soft">
+        <div className="rpg-inset mt-2 px-3 py-3">
+          <p className="text-[12px] font-semibold text-ink-soft">
             Tier de <span className="text-ink">{activeFamily.name}</span>
             {full ? (
-              <span className="text-muted">
+              <span className="font-medium text-muted">
                 {" "}
                 · já tem 2: o próximo troca o mais antigo
               </span>
@@ -164,12 +152,9 @@ export function HeldPicker({
                 <button
                   key={tier}
                   type="button"
+                  data-active={active}
                   onClick={() => addTier(tier)}
-                  className={
-                    active
-                      ? "min-w-[2.75rem] border border-brass bg-brass px-3 py-2 text-[13px] font-medium text-ink"
-                      : "min-w-[2.75rem] border border-line bg-card px-3 py-2 text-[13px] text-ink-soft hover:border-brass/50 hover:text-ink"
-                  }
+                  className="rpg-chip min-w-[2.75rem] text-center"
                 >
                   T{tier}
                 </button>

@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "product": "pkatrade",
+    "version": "1.0.1",
+    "notes": [
+      "Auth MVP: email com código (OTP) + Google OAuth.",
+      "Após o primeiro login (email ou Google), o perfil de jogo é obrigatório: gameNick + world.",
+      "Visibilidade do nick é POR ANÚNCIO (showSellerNick no listing), não global.",
+      "defaultShowNickOnListings no perfil só define o default do formulário de novo anúncio.",
+      "world no perfil é obrigatório — servidor principal do personagem.",
+      "profileComplete = gameNick preenchido + world válido."
+    ]
+  },
+
+  "enums": {
+    "world": ["Sun", "Moon", "Titan", "Titan 2", "Titan 3"],
+    "authProvider": ["email", "google"]
+  },
+
+  "user": {
+    "id": "usr_01hxyz",
+    "email": "treinador@email.com",
+    "providers": ["email", "google"],
+    "gameNick": "AshKetch",
+    "world": "Sun",
+    "defaultShowNickOnListings": true,
+    "profileComplete": true,
+    "createdAt": "2026-09-13T15:00:00.000Z"
+  },
+
+  "requestEmailCode": {
+    "email": "treinador@email.com"
+  },
+
+  "verifyEmailCode": {
+    "email": "treinador@email.com",
+    "code": "123456"
+  },
+
+  "updateProfileRequest": {
+    "gameNick": "AshKetch",
+    "world": "Sun",
+    "defaultShowNickOnListings": true
+  }
+}

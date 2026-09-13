@@ -3,7 +3,9 @@
     "product": "pkatrade",
     "version": "1.0.0",
     "notes": [
+      "MVP: só anúncios de venda (side=venda). Procuro fica fora por enquanto.",
       "Required Level, generation, tier, elements, image e displayName vêm do catálogo (wiki) a partir de dex+shiny — o client não deve inventar esses campos no create.",
+      "Visibilidade do nick é POR ANÚNCIO (showSellerNick). defaultShowNickOnListings no perfil só pré-preenche o form.",
       "NPC Price e Comida/Buffs não entram no anúncio.",
       "helds: máximo 2 ids. Formato: {family}-t{tier}, ex: x-attack-t5, y-ghost-t3.",
       "priceBrl é inteiro em reais (sem centavos no MVP).",
@@ -12,7 +14,7 @@
   },
 
   "enums": {
-    "side": ["venda", "procuro"],
+    "side": ["venda"],
     "world": ["Sun", "Moon", "Titan", "Titan 2", "Titan 3"],
     "status": ["active", "sold", "archived"],
     "starLevel": [0, 1, 2, 3, 4, 5],
@@ -53,6 +55,7 @@
     "side": "venda",
     "world": "Sun",
     "priceBrl": 1100,
+    "showSellerNick": true,
     "note": "Prefiro Pix. Entrego no DP.",
     "attrs": {
       "aura": 3800,
@@ -74,9 +77,10 @@
   "createListingRequestMinimal": {
     "dex": 25,
     "shiny": false,
-    "side": "procuro",
+    "side": "venda",
     "world": "Moon",
     "priceBrl": 50,
+    "showSellerNick": false,
     "note": "",
     "attrs": {
       "aura": null,
@@ -122,6 +126,7 @@
     "side": "venda",
     "world": "Sun",
     "priceBrl": 1100,
+    "showSellerNick": true,
     "note": "Prefiro Pix. Entrego no DP.",
 
     "attrs": {
@@ -144,9 +149,10 @@
   "fieldRules": {
     "dex": "number, obrigatório, existe no catálogo wiki",
     "shiny": "boolean, obrigatório",
-    "side": "venda | procuro",
+    "side": "venda (MVP; procuro fora)",
     "world": "Sun | Moon | Titan | Titan 2 | Titan 3",
     "priceBrl": "integer >= 0",
+    "showSellerNick": "boolean — por anúncio; false = card/detalhe como Anônimo",
     "note": "string, max ~2000 chars, pode ser vazia",
     "attrs.aura": "integer >= 0 | null",
     "attrs.boost": "integer >= 0 | null (UI mostra +N)",

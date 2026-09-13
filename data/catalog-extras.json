@@ -1,0 +1,37 @@
+{
+  "_comment": "Entradas manuais ausentes da API wiki.pokealliance.com — mergeadas no build-catalog.",
+  "pokemon": [
+    {
+      "path": "gen/6/673_gogoat",
+      "route": "gen/6/gogoat",
+      "generation": "6",
+      "number": "673",
+      "name": "Gogoat",
+      "displayName": "673 - Gogoat",
+      "image": "/pokemon/673.png",
+      "level": 100,
+      "tier": 3,
+      "displayTier": 3,
+      "role": "PVE",
+      "elements": [{ "name": "grass", "icon": "/elements/4.png" }],
+      "variant": "normal",
+      "detailAvailable": false
+    },
+    {
+      "path": "shiny/673_shiny_gogoat",
+      "route": "shiny/673_shiny_gogoat",
+      "generation": "6",
+      "number": "673",
+      "name": "Shiny Gogoat",
+      "displayName": "673 - Shiny Gogoat",
+      "image": "/pokemon/673.1.png",
+      "level": 120,
+      "tier": 2,
+      "displayTier": 2,
+      "role": "PVE",
+      "elements": [{ "name": "grass", "icon": "/elements/4.png" }],
+      "variant": "shiny",
+      "detailAvailable": false
+    }
+  ]
+}

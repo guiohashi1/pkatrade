@@ -9,13 +9,8 @@ type Message = {
   at: string;
 };
 
-const seed: Message[] = [
-  { id: "1", from: "them", text: "Ainda tem?", at: "18:12" },
-  { id: "2", from: "you", text: "Tenho. Prefiro Pix e entrega no DP.", at: "18:14" },
-];
-
 export function ChatPanel({ seller }: { seller: string }) {
-  const [messages, setMessages] = useState(seed);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [draft, setDraft] = useState("");
 
   function send() {
@@ -41,20 +36,32 @@ export function ChatPanel({ seller }: { seller: string }) {
       </div>
 
       <div className="flex-1 space-y-3 overflow-y-auto px-4 py-4">
-        {messages.map((message) => (
-          <div key={message.id} className={message.from === "you" ? "text-right" : ""}>
-            <p
-              className={
-                message.from === "you"
-                  ? "ml-6 inline-block bg-olive-soft px-3 py-2 text-left text-[13px] leading-relaxed text-olive"
-                  : "mr-6 inline-block bg-well px-3 py-2 text-[13px] leading-relaxed text-ink"
-              }
+        {messages.length === 0 ? (
+          <p className="py-10 text-center text-[13px] leading-relaxed text-muted">
+            Manda a primeira mensagem pra combinar a troca.
+            <span className="mt-1 block text-[11px]">
+              O histórico real entra com o back.
+            </span>
+          </p>
+        ) : (
+          messages.map((message) => (
+            <div
+              key={message.id}
+              className={message.from === "you" ? "text-right" : ""}
             >
-              {message.text}
-            </p>
-            <p className="mt-1 text-[11px] text-muted">{message.at}</p>
-          </div>
-        ))}
+              <p
+                className={
+                  message.from === "you"
+                    ? "ml-6 inline-block bg-olive-soft px-3 py-2 text-left text-[13px] leading-relaxed text-olive"
+                    : "mr-6 inline-block bg-well px-3 py-2 text-[13px] leading-relaxed text-ink"
+                }
+              >
+                {message.text}
+              </p>
+              <p className="mt-1 text-[11px] text-muted">{message.at}</p>
+            </div>
+          ))
+        )}
       </div>
 
       <div className="flex gap-2 border-t border-line p-3">
@@ -65,7 +72,7 @@ export function ChatPanel({ seller }: { seller: string }) {
             if (event.key === "Enter") send();
           }}
           placeholder="Escreva a mensagem"
-          className="min-w-0 flex-1 border border-line bg-paper px-3 py-2 text-[13px] outline-none focus:border-ink"
+          className="rpg-input min-w-0 flex-1"
         />
         <button
           type="button"
@@ -77,7 +84,7 @@ export function ChatPanel({ seller }: { seller: string }) {
       </div>
 
       <p className="border-t border-line-soft px-4 py-2 text-[11px] text-muted">
-        Chat de teste. Nada fica salvo.
+        Rascunho local — não fica salvo no servidor ainda.
       </p>
     </aside>
   );

@@ -12,10 +12,9 @@ export const adsConfig = {
   /** Liga o AdSense de verdade (ainda sem client id). */
   live: false,
   /**
-   * Mostra o retângulo vazio no esboço, bem discreto.
-   * Em produção, deixe false até o AdSense estar aprovado.
+   * Retângulos vazios no layout. Off por padrão — liga só em esboço visual.
    */
-  placeholders: true,
+  placeholders: process.env.NEXT_PUBLIC_AD_PLACEHOLDERS === "1",
 } as const;
 
 export type AdSlotId = "home-footer" | "listing-after-note";

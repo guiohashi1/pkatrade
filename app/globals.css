@@ -1,36 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  /* Pedra musgosa + latão: Tibia sem cream/terracota de template */
-  --paper: #dfe4d8;
-  --paper-deep: #d2d8c9;
-  --card: #eef1e6;
-  --well: #d5dbc9;
-  --ink: #1a2218;
-  --ink-soft: #2f3a2c;
-  --muted: #5d6958;
-  --line: #aeb8a2;
-  --line-soft: #c5ceba;
-  --olive: #2f5c38;
-  --olive-soft: #d7e6d4;
+  /* Marketplace retro-RPG: marinho + creme + ouro + verde */
+  --navy: #1c3358;
+  --navy-deep: #14243f;
+  --navy-mid: #2a4a78;
+  --sky: #8eb4d8;
+  --sky-soft: #c5d9eb;
+  --paper: #eef2f7;
+  --paper-deep: #e2e8f0;
+  --card: #f7f9fc;
+  --cream: #f4f1e8;
+  --ink: #152238;
+  --ink-soft: #2c3f5c;
+  --muted: #5c6f88;
+  --line: #a8b8cc;
+  --line-soft: #cdd7e4;
+  --olive: #3d7a52;
+  --olive-soft: #d5eadc;
   --price: #8a6a14;
-  --warn: #8a3d2c;
-  --warn-soft: #edd9d2;
-  --gold: #b08a22;
-  --gold-soft: #efe3bf;
-  --brass: #9a7b2e;
-  --look-bg: #121a12;
-  --look-ink: #b8e6a4;
-  --look-dim: #6f9a68;
-  --frame: #5c664f;
-  --type-tint: #6d7c5c;
+  --warn: #a04438;
+  --warn-soft: #f0ddd8;
+  --gold: #c9a227;
+  --gold-soft: #f3e6b8;
+  --brass: #b08d2e;
+  --look-bg: #101828;
+  --look-ink: #b8d4f0;
+  --look-dim: #6a849e;
+  --frame: #1c3358;
+  --type-tint: #6a849e;
+  --hp: #3d9a6a;
+  --hp-track: #d5dde8;
 }
 
 @theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-mid: var(--navy-mid);
+  --color-sky: var(--sky);
+  --color-sky-soft: var(--sky-soft);
   --color-paper: var(--paper);
   --color-paper-deep: var(--paper-deep);
   --color-card: var(--card);
-  --color-well: var(--well);
+  --color-cream: var(--cream);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-muted: var(--muted);
@@ -48,8 +60,11 @@
   --color-look-ink: var(--look-ink);
   --color-look-dim: var(--look-dim);
   --color-frame: var(--frame);
-  --font-sans: var(--font-plex);
-  --font-serif: var(--font-fraunces);
+  --color-hp: var(--hp);
+  --color-hp-track: var(--hp-track);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-pixel);
+  --font-serif: var(--font-pixel);
 }
 
 html {
@@ -58,32 +73,27 @@ html {
 
 body {
   color: var(--ink);
-  font-family: var(--font-plex), "IBM Plex Sans", sans-serif;
-  background-color: #c8d0bc;
+  font-family: var(--font-body), "Nunito Sans", sans-serif;
+  /* Pixel art GBA-style (HD) — cena original, não asset Nintendo */
+  background-color: #14243f;
   background-image:
-    radial-gradient(ellipse 90% 55% at 50% -10%, #eef3e4 0%, transparent 55%),
-    radial-gradient(ellipse 70% 40% at 100% 100%, #b7c4a8 0%, transparent 50%),
-    radial-gradient(ellipse 50% 35% at 0% 80%, #c5b98a33 0%, transparent 45%),
-    linear-gradient(180deg, #d5dccf 0%, #c5ceba 100%),
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 11px,
-      rgb(60 70 50 / 0.035) 11px,
-      rgb(60 70 50 / 0.035) 12px
+    linear-gradient(
+      180deg,
+      rgb(20 36 63 / 0.22) 0%,
+      rgb(20 36 63 / 0.08) 35%,
+      rgb(20 36 63 / 0.1) 75%,
+      rgb(14 24 40 / 0.28) 100%
     ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 11px,
-      rgb(60 70 50 / 0.035) 11px,
-      rgb(60 70 50 / 0.035) 12px
-    );
+    url("/bg/overworld.png?v=gba1");
+  background-size: auto, cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  image-rendering: auto;
 }
 
 ::selection {
-  background: #c5d9b8;
+  background: #c5d9eb;
   color: var(--ink);
 }
 
@@ -99,152 +109,489 @@ select:focus-visible,
 textarea:focus-visible,
 button:focus-visible,
 a:focus-visible {
-  outline: 1px solid var(--brass);
-  outline-offset: 1px;
-}
-
-/* Moldura de arte: pedra + tom do tipo do Pokémon */
-.art-well {
-  background:
-    radial-gradient(
-      120% 95% at 50% 12%,
-      color-mix(in srgb, var(--type-tint) 18%, #f4f6ee) 0%,
-      color-mix(in srgb, var(--type-tint) 28%, #d7ddcc) 55%,
-      color-mix(in srgb, var(--type-tint) 40%, #c2cbb4) 100%
-    );
-  box-shadow:
-    inset 0 0 0 1px rgb(26 34 24 / 0.12),
-    inset 0 0 0 3px rgb(255 255 255 / 0.18);
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
 
 .tabular {
   font-variant-numeric: tabular-nums;
 }
 
+/* Moldura RPG: borda dupla navy + highlight interno */
+.rpg-panel {
+  background: linear-gradient(180deg, #fbfcfe 0%, var(--card) 45%, #eef2f7 100%);
+  border: 3px solid var(--navy);
+  box-shadow:
+    inset 0 0 0 2px #dce6f2,
+    inset 0 0 0 3px color-mix(in srgb, var(--navy) 35%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--gold) 35%, transparent),
+    0 16px 36px -14px rgb(20 36 63 / 0.55),
+    0 4px 0 rgb(40 80 48 / 0.35);
+}
+
+.rpg-panel-header {
+  background: linear-gradient(180deg, var(--navy-mid) 0%, var(--navy) 100%);
+  border-bottom: 3px solid var(--navy-deep);
+  color: #f4f7fb;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.18);
+}
+
+.rpg-inset {
+  background: var(--cream);
+  border: 2px solid var(--navy);
+  box-shadow: inset 0 0 0 1px #fff8e8, inset 2px 2px 0 rgb(20 36 63 / 0.08);
+}
+
+.rpg-sidebar {
+  background: linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+  border: 3px solid var(--navy);
+  box-shadow: inset 0 0 0 2px #dce6f2;
+}
+
+/* ——— Controles de formulário (tema menu RPG) ——— */
+.rpg-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rpg-input,
+.rpg-select,
+.field,
+.rpg-textarea {
+  width: 100%;
+  border: 2px solid color-mix(in srgb, var(--navy) 38%, var(--line));
+  background: linear-gradient(180deg, #ffffff 0%, var(--card) 100%);
+  color: var(--ink);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.75),
+    inset 0 -1px 0 rgb(20 36 63 / 0.04);
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.rpg-input,
+.rpg-select,
+.field {
+  padding: 0.45rem 0.7rem;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rpg-textarea {
+  padding: 0.55rem 0.7rem;
+  font-size: 13px;
+  line-height: 1.45;
+  resize: vertical;
+}
+
+.rpg-input::placeholder,
+.rpg-textarea::placeholder {
+  color: color-mix(in srgb, var(--muted) 75%, transparent);
+  font-weight: 500;
+}
+
+.rpg-input:hover,
+.rpg-select:hover,
+.field:hover,
+.rpg-textarea:hover {
+  border-color: color-mix(in srgb, var(--navy) 55%, var(--line));
+}
+
+.rpg-input:focus,
+.rpg-select:focus,
+.field:focus,
+.rpg-textarea:focus {
+  border-color: var(--navy);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.75),
+    0 0 0 3px color-mix(in srgb, var(--gold) 35%, transparent);
+}
+
+.rpg-input:disabled,
+.rpg-select:disabled,
+.field:disabled,
+.rpg-textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rpg-select,
 .field {
   appearance: none;
-  background-color: var(--card);
-  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
-    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
-  background-position: right 12px center, right 7px center;
-  background-size: 5px 5px, 5px 5px;
+  cursor: pointer;
+  padding-right: 2rem;
+  background-image:
+    linear-gradient(180deg, #ffffff 0%, var(--card) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231c3358' d='M1 1.5 6 6.5 11 1.5'/%3E%3C/svg%3E");
+  background-position:
+    0 0,
+    right 0.65rem center;
+  background-size:
+    auto,
+    12px 8px;
   background-repeat: no-repeat;
-  padding-right: 26px;
 }
 
-.rule-top {
-  background-image: linear-gradient(
-    to right,
-    var(--line) 0 2px,
-    transparent 2px 6px
-  );
-  background-size: 6px 1px;
-  background-repeat: repeat-x;
+.rpg-select option,
+.field option {
+  background: var(--card);
+  color: var(--ink);
 }
 
-/* Painel principal: pergaminho em moldura de pedra/latão */
-.site-panel {
-  background: linear-gradient(180deg, #f3f5ec 0%, var(--card) 40%, #e8ecdf 100%);
-  border: 1px solid var(--frame);
+/* Segmented control (Normal/Shiny, Held X/Y) */
+.rpg-seg {
+  display: inline-flex;
+  border: 2px solid var(--navy);
+  background: var(--paper-deep);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.5);
+}
+
+.rpg-seg button {
+  border: 0;
+  background: transparent;
+  padding: 0.4rem 0.85rem;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.rpg-seg button + button {
+  border-left: 2px solid color-mix(in srgb, var(--navy) 35%, transparent);
+}
+
+.rpg-seg button:hover:not(:disabled) {
+  color: var(--ink);
+  background: rgb(255 255 255 / 0.45);
+}
+
+.rpg-seg button[data-active="true"] {
+  background: linear-gradient(180deg, #f3e6b8 0%, #e8d48a 100%);
+  color: var(--navy-deep);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.45);
+}
+
+.rpg-seg button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Chips / opções clicáveis */
+.rpg-chip {
+  border: 2px solid color-mix(in srgb, var(--navy) 28%, var(--line));
+  background: linear-gradient(180deg, #ffffff 0%, var(--card) 100%);
+  padding: 0.4rem 0.65rem;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7);
+}
+
+.rpg-chip:hover {
+  border-color: color-mix(in srgb, var(--navy) 50%, var(--line));
+  color: var(--ink);
+}
+
+.rpg-chip[data-active="true"] {
+  border-color: var(--navy);
+  background: linear-gradient(180deg, #f3e6b8 0%, #e8d48a 100%);
+  color: var(--navy-deep);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.45);
+}
+
+.rpg-menu {
+  border: 2px solid var(--navy);
+  background: var(--card);
   box-shadow:
-    0 0 0 1px color-mix(in srgb, var(--brass) 55%, transparent),
-    0 0 0 4px color-mix(in srgb, var(--card) 80%, #9aa68c),
-    0 18px 40px -28px rgb(26 34 24 / 0.45);
+    inset 0 0 0 1px #dce6f2,
+    0 10px 24px -16px rgb(20 36 63 / 0.45);
 }
 
-.site-panel-header {
-  border-bottom: 1px solid var(--line);
+.rpg-menu-item {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
+  text-align: left;
+}
+
+.rpg-menu-item:last-child {
+  border-bottom: 0;
+}
+
+.rpg-menu-item:hover {
+  background: color-mix(in srgb, var(--sky-soft) 45%, transparent);
+}
+
+.btn-brass {
+  border: 2px solid var(--navy-deep);
+  background: linear-gradient(180deg, #e0c04a 0%, var(--brass) 100%);
+  color: var(--navy-deep);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.35);
+  font-weight: 700;
+}
+
+.btn-brass:hover {
+  filter: brightness(1.06);
+}
+
+.btn-navy {
+  border: 2px solid var(--navy-deep);
+  background: linear-gradient(180deg, var(--navy-mid) 0%, var(--navy) 100%);
+  color: #f4f7fb;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.2);
+  font-weight: 700;
+}
+
+.btn-navy:hover {
+  filter: brightness(1.08);
+}
+
+.art-well {
   background:
-    linear-gradient(180deg, #f7f8f1 0%, #ebeedf 100%);
-  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--brass) 35%, transparent);
+    radial-gradient(
+      120% 95% at 50% 12%,
+      color-mix(in srgb, var(--type-tint) 12%, #ffffff) 0%,
+      color-mix(in srgb, var(--type-tint) 18%, #eef4fa) 55%,
+      color-mix(in srgb, var(--type-tint) 28%, #d8e4f0) 100%
+    );
+  box-shadow:
+    inset 0 0 0 1px rgb(28 51 88 / 0.1),
+    inset 0 0 0 3px rgb(255 255 255 / 0.45);
 }
 
-.feed-rail {
-  border-top: 1px solid var(--line);
-  background: color-mix(in srgb, var(--card) 88%, #fff);
+/* Cards colecionáveis */
+.collect-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
+  border: 3px solid var(--navy);
+  box-shadow:
+    inset 0 0 0 2px #e8eef6,
+    0 8px 18px -12px rgb(20 36 63 / 0.4);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.feed-row {
-  padding-inline: 0.35rem;
-  transition: background-color 0.15s ease;
+.collect-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    inset 0 0 0 2px #e8eef6,
+    0 14px 28px -14px rgb(20 36 63 / 0.5);
 }
 
-.feed-row:hover {
-  background: color-mix(in srgb, var(--olive-soft) 45%, transparent);
+.collect-card[data-rarity="uncommon"] {
+  border-color: #3d7a52;
+  box-shadow:
+    inset 0 0 0 2px #d5eadc,
+    0 8px 18px -12px rgb(20 36 63 / 0.4);
 }
 
-.feed-row-shiny {
-  background: linear-gradient(
-    90deg,
-    color-mix(in srgb, var(--gold-soft) 55%, transparent) 0%,
-    transparent 42%
-  );
+.collect-card[data-rarity="rare"] {
+  border-color: #3a6fb0;
+  box-shadow:
+    inset 0 0 0 2px #d4e4f6,
+    0 0 0 1px color-mix(in srgb, #3a6fb0 40%, transparent),
+    0 8px 18px -12px rgb(20 36 63 / 0.4);
 }
 
-.feed-row-shiny:hover {
-  background: linear-gradient(
-    90deg,
-    color-mix(in srgb, var(--gold-soft) 75%, transparent) 0%,
-    color-mix(in srgb, var(--olive-soft) 35%, transparent) 55%
-  );
+.collect-card[data-rarity="special"] {
+  border-color: var(--gold);
+  background: linear-gradient(180deg, #fffdf5 0%, #f7f9fc 55%, #f3e6b8 140%);
+  box-shadow:
+    inset 0 0 0 2px #f3e6b8,
+    0 0 0 1px color-mix(in srgb, var(--gold) 50%, transparent),
+    0 8px 18px -12px rgb(20 36 63 / 0.4);
+}
+
+.collect-card[data-rarity="premium"] {
+  border-color: #7a4fb0;
+  background: linear-gradient(180deg, #fbf8ff 0%, #f7f9fc 60%, #e8dff5 140%);
+  box-shadow:
+    inset 0 0 0 2px #e8dff5,
+    0 0 0 1px color-mix(in srgb, #7a4fb0 45%, transparent),
+    0 8px 18px -12px rgb(20 36 63 / 0.45);
+}
+
+.hp-bar {
+  height: 8px;
+  border: 2px solid var(--navy);
+  background: var(--hp-track);
+  overflow: hidden;
+}
+
+.hp-bar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(180deg, #5ecf8a 0%, var(--hp) 100%);
+}
+
+.cat-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.55rem;
+  border: 2px solid transparent;
+  padding: 0.45rem 0.55rem;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.cat-item:hover {
+  background: color-mix(in srgb, var(--sky-soft) 55%, transparent);
+}
+
+.cat-item[data-active="true"] {
+  border-color: var(--navy);
+  background: linear-gradient(180deg, #f3e6b8 0%, #e8d48a 100%);
+  color: var(--navy-deep);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.4);
+}
+
+.cat-glyph {
+  display: grid;
+  width: 1.5rem;
+  height: 1.5rem;
+  place-items: center;
+  border: 1.5px solid color-mix(in srgb, currentColor 28%, transparent);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--card) 85%, transparent);
+  color: var(--navy-mid);
+  line-height: 0;
+}
+
+.cat-item[data-active="true"] .cat-glyph {
+  border-color: color-mix(in srgb, var(--navy) 55%, transparent);
+  background: rgb(255 255 255 / 0.55);
+  color: var(--navy-deep);
 }
 
 .filter-chip {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  border: 1px solid color-mix(in srgb, var(--brass) 45%, var(--line));
-  background: color-mix(in srgb, var(--gold-soft) 55%, var(--card));
+  border: 2px solid color-mix(in srgb, var(--navy) 40%, var(--line));
+  background: color-mix(in srgb, var(--sky-soft) 55%, var(--card));
   padding: 0.2rem 0.55rem;
   font-size: 12px;
+  font-weight: 600;
   color: var(--ink-soft);
 }
 
 .filter-chip:hover {
-  border-color: var(--brass);
+  border-color: var(--navy);
   color: var(--ink);
 }
 
-.btn-brass {
-  border: 1px solid var(--brass);
-  background: linear-gradient(180deg, #c9a63a 0%, #9a7b2e 100%);
-  color: #1a2218;
+.type-pip {
+  display: grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  line-height: 0;
 }
 
-.btn-brass:hover {
-  filter: brightness(1.05);
+/* Hero: pixel art full-bleed (public/hero/banner.png) */
+.hero-scene {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid var(--navy);
+  background: #1c3358;
+  box-shadow:
+    inset 0 0 0 2px #c5d9eb,
+    0 10px 24px -16px rgb(20 36 63 / 0.5);
+}
+
+.hero-scene__art {
+  object-fit: cover;
+  object-position: 72% 45%;
+  image-rendering: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-scene__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgb(244 241 232 / 0.82) 0%,
+      rgb(244 241 232 / 0.55) 28%,
+      rgb(244 241 232 / 0.14) 48%,
+      transparent 64%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 78%,
+      rgb(20 36 63 / 0.12) 100%
+    );
 }
 
 .look-sheet {
   background:
-    radial-gradient(120% 80% at 50% 0%, #1d2a1c 0%, var(--look-bg) 55%);
-  border: 1px solid #3d5a38;
+    radial-gradient(120% 80% at 50% 0%, #1d2e48 0%, var(--look-bg) 55%);
+  border: 2px solid #3d5a78;
   box-shadow:
-    inset 0 0 0 1px #0c120c,
-    0 0 0 1px color-mix(in srgb, var(--brass) 40%, transparent);
+    inset 0 0 0 1px #0c121c,
+    0 0 0 1px color-mix(in srgb, var(--gold) 40%, transparent);
   color: var(--look-ink);
   font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
 }
 
-.pokeball-mark {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 1.5px solid var(--ink);
-  background:
-    linear-gradient(180deg, #c23b3b 0 49%, var(--ink) 49% 51%, #f3f5ec 51% 100%);
-  position: relative;
-  flex-shrink: 0;
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
-.pokeball-mark::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  border: 1.5px solid var(--ink);
-  background: #f3f5ec;
+.float-soft {
+  animation: float-soft 3.2s ease-in-out infinite;
+}
+
+@keyframes slide-up-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.enter-fade {
+  animation: slide-up-fade 0.45s ease-out both;
+}
+
+/* Slot pixelado para selos do footer */
+.badge-slot {
+  border: 2px solid #c9a227;
+  background:
+    linear-gradient(180deg, #3a5a88 0%, #243a5c 100%);
+  box-shadow:
+    inset 0 0 0 1px #14243f,
+    inset 0 1px 0 rgb(255 255 255 / 0.12),
+    0 0 0 1px rgb(20 36 63 / 0.8);
+  image-rendering: pixelated;
 }

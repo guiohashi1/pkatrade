@@ -3,17 +3,14 @@ import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { ChatPanel } from "@/components/ChatPanel";
 import { ElementDots } from "@/components/ElementDots";
+import { IconTrade, ShinyMark } from "@/components/Icons";
 import { ListingCard } from "@/components/ListingCard";
 import { LookSheet } from "@/components/LookSheet";
 import { TierBadge } from "@/components/TierBadge";
-import { artworkUrl } from "@/lib/art";
-import { elementColor, elementLabels } from "@/lib/catalog";
-import {
-  formatPrice,
-  getListing,
-  relatedListings,
-  sideLabel,
-} from "@/lib/listings";
+import { fetchListing, fetchRelatedListings } from "@/lib/api";
+import { artworkForPokemon } from "@/lib/art";
+import { elementColor, elementLabels, pokemonTitle } from "@/lib/catalog";
+import { formatPrice, listingSellerLabel } from "@/lib/listings";
 
 export default async function ListingPage({
   params,
@@ -21,46 +18,37 @@ export default async function ListingPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const listing = getListing(id);
+  const listing = await fetchListing(id);
 
   if (!listing) notFound();
 
-  const related = relatedListings(listing);
+  const related = await fetchRelatedListings(listing);
 
   return (
-    <div>
-      <nav className="flex items-center gap-1.5 text-[12px] text-muted">
-        <Link href="/" className="hover:text-ink">
+    <div className="px-3 py-5 sm:px-6 sm:py-7">
+      <nav className="text-[12px] font-bold text-muted">
+        <Link href="/" className="hover:text-navy">
           Anúncios
         </Link>
-        <span className="text-line">/</span>
-        <span>{listing.world}</span>
-        <span className="text-line">/</span>
-        <span className="text-ink">{listing.displayName}</span>
+        <span className="mx-2 text-line">/</span>
+        <span className="text-ink">{pokemonTitle(listing)}</span>
       </nav>
 
       <div className="mt-5 grid gap-8 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
         <article>
           <div className="flex flex-wrap items-center gap-2">
-            <span
-              className={
-                listing.side === "venda"
-                  ? "bg-olive-soft px-2 py-0.5 text-[10px] uppercase tracking-[0.1em] text-olive"
-                  : "bg-warn-soft px-2 py-0.5 text-[10px] uppercase tracking-[0.1em] text-warn"
-              }
-            >
-              {sideLabel(listing.side)}
+            <span className="inline-flex items-center gap-1 bg-olive-soft px-2 py-0.5 text-[10px] uppercase tracking-[0.1em] text-olive">
+              <IconTrade className="text-[14px]" />
+              À venda
             </span>
             {listing.shiny ? (
-              <span className="border border-gold/40 bg-gold/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.1em] text-gold">
-                shiny
-              </span>
+              <ShinyMark className="text-[11px] font-medium text-price/85" />
             ) : null}
             <TierBadge tier={listing.tier} />
           </div>
 
-          <h1 className="mt-3 font-serif text-[2rem] leading-[1.12] tracking-tight sm:text-[2.4rem]">
-            {listing.displayName}
+          <h1 className="mt-3 font-[family-name:var(--font-pixel)] text-[1.75rem] leading-[1.15] tracking-wide text-navy sm:text-[2.2rem]">
+            {pokemonTitle(listing)}
           </h1>
           <p className="mt-2 text-[13px] text-muted">
             #{listing.number}
@@ -80,21 +68,22 @@ export default async function ListingPage({
               }}
             >
               <img
-                src={artworkUrl(listing.image)}
+                src={artworkForPokemon(listing)}
                 alt=""
                 className="h-full w-full object-contain"
+                style={{ imageRendering: "pixelated" }}
               />
             </div>
 
             <div>
               <p className="text-[11px] uppercase tracking-[0.1em] text-muted">
-                {listing.side === "venda" ? "Preço pedido" : "Pago até"}
+                Preço
               </p>
               <p className="tabular mt-1 font-serif text-[2.1rem] leading-none text-price">
                 {formatPrice(listing.priceBrl)}
               </p>
 
-              <dl className="mt-6 divide-y divide-line-soft border-y border-line-soft text-[14px]">
+              <dl className="mt-6 divide-y divide-line-soft border-y border-line-soft text-[13px]">
                 <div className="flex gap-4 py-2">
                   <dt className="w-24 shrink-0 text-muted">Tipo</dt>
                   <dd>Pokémon</dd>
@@ -112,7 +101,7 @@ export default async function ListingPage({
                 </div>
                 <div className="flex gap-4 py-2">
                   <dt className="w-24 shrink-0 text-muted">Anunciante</dt>
-                  <dd>{listing.seller}</dd>
+                  <dd>{listingSellerLabel(listing)}</dd>
                 </div>
                 <div className="flex gap-4 py-2">
                   <dt className="w-24 shrink-0 text-muted">Publicado</dt>
@@ -124,7 +113,7 @@ export default async function ListingPage({
 
           <section className="mt-8">
             <LookSheet
-              title={listing.displayName}
+              title={pokemonTitle(listing)}
               attrs={listing.attrs}
               requiredLevel={listing.requiredLevel}
             />
@@ -150,16 +139,16 @@ export default async function ListingPage({
         </article>
 
         <div className="lg:sticky lg:top-20">
-          <ChatPanel seller={listing.seller} />
+          <ChatPanel seller={listingSellerLabel(listing)} />
         </div>
       </div>
 
       {related.length > 0 ? (
-        <section className="mt-14 border-t border-line pt-8">
-          <h2 className="font-serif text-[1.3rem] leading-none">
+        <section className="mt-14 border-t-2 border-line pt-8">
+          <h2 className="font-[family-name:var(--font-pixel)] text-[1.15rem] text-navy">
             Outros anúncios
           </h2>
-          <ul className="feed-rail mt-4 px-1 sm:px-2">
+          <ul className="mt-4 grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
             {related.map((item) => (
               <ListingCard key={item.id} listing={item} />
             ))}

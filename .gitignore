@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local decrypt tests (game assets — do not commit)
+.tmp-sprite-test/
+.tmp-bg/
+scripts/__pycache__/
+*.pyc
+
+# sprite RE / probe dumps (not used by the app)
+public/sprites/probe/
